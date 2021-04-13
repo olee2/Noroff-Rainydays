@@ -1,2 +1,2 @@
 # Noroff-Rainydays
- Noroff Front-end development project
+This is a project from the Front-end development course at Noroff. 
