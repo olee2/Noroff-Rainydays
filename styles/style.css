@@ -1,19 +1,25 @@
 
-body{
-  background-image: url("../images/luca-massimilian-NCFCbcNVSVQ-unsplash.jpg");
-  background-position: center top;
-  background-size: 2040px 1290px;
-  background-repeat: no-repeat;
-  margin: 0;
+html{
   font-family: verdana;
 }
 
+.home-body{
+  background-image: url("../images/luca-massimilian-NCFCbcNVSVQ-unsplash.jpg");
+  background-position: center top;
+  background-size: auto 1280px;
+  background-repeat: no-repeat;
+  margin: 0;
+}
+
+/* Header and Nav */
+
 header{
+  padding-top: 15px;
 }
 
 nav{
   float: right;
-  margin: 24px 15px 0 0;
+  margin: 20px 70px 0 0;
 }
 
 nav ul{
@@ -24,9 +30,24 @@ nav ul{
 nav li{
   display: inline;
   padding: 0 0 0 20px;
-  font-size: 25px;
-  color: #0A3540;
+  font-size: 21px;
 }
+
+.logo{
+  height: 220px;
+  width: 410px;
+  margin: 10px 0 0 30px;
+}
+
+.header-div{
+  height: 65px;
+  background: rgba(251, 251, 251, 0.8);
+  margin-top: -55px;
+  border-top: solid 3px #0A3540;
+  border-bottom: solid 3px #0A3540;
+}
+
+/* Link Style */
 
 .link{
   text-decoration: none;
@@ -38,55 +59,63 @@ nav li{
   text-decoration-color: #8C4300;
 }
 
-#logo{
-  height: 275px;
-  width: 512px;
-  margin: 10px 0 0 30px;
+.active{
+  color: #8C4300;
 }
 
-#header-div{
-  height: 76px;
-  background: rgba(251, 251, 251, 0.8);
-  margin-top: -66px;
-  border-top: solid 3px #0A3540;
-  border-bottom: solid 3px #0A3540;
-}
-
-#mid-section{
-  height: 100vh;
-}
+/* Footer */
 
 footer{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 15px 0 15px;
-  height: 78px;
+  flex-wrap: wrap;
+  padding: 0 70px 0 70px;
   background-color: #FBFBFB;
   border-top: solid 3px #0A3540;
   border-bottom: solid 3px #0A3540;
-
+  font-size: 16px;
 }
 
-#copyright{
+.copyright{
   display:flex;
   align-items: center;
 }
 
-#copyright p{
+.copyright p{
   margin-left: 5px;
 }
 
-#policies{
+.copyright img{
+  height: 30px;
+  width: auto;
+}
+
+.policies{
   display:flex;
   align-items: center;
 }
 
-#contact{
+.policies p{
+  padding: 0 5px 0 5px;
+}
+
+.contact{
   display:flex;
   align-items: center;
 }
 
-#contact a{
+.contact a{
   margin-right: 5px;
+}
+
+.contact img{
+  height: 30px;
+  width: auto;
+}
+
+/*Home*/
+
+#mid-section{
+  height: 100vh;
 }
