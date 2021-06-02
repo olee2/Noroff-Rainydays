@@ -10,13 +10,13 @@ html{
   background-repeat: no-repeat;
   margin: 0;
 }
-
+/*
 @media (max-width: 1080px){
   .home-body{
     background-position: center top;
   }
 }
-
+ */
 /* Header and Nav */
 
 header{
