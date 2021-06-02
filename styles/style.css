@@ -195,7 +195,6 @@ footer{
     display: flex;
     justify-content: center;
     padding-top: 60px;
-    height: auto;
   }
   #home-cta{
     margin-left: 0;
