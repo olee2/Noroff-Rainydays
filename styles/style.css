@@ -14,7 +14,6 @@ html{
 @media (max-width: 1080px){
   .home-body{
     background-position: center top;
-    background-size: cover;
   }
 }
 
@@ -196,7 +195,6 @@ footer{
     display: flex;
     justify-content: center;
     padding-top: 60px;
-    height:70vh;
   }
   #home-cta{
     margin-left: 0;
