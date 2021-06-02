@@ -5,10 +5,16 @@ html{
 
 .home-body{
   background-image: url("../images/luca-massimilian-NCFCbcNVSVQ-unsplash.jpg");
-  background-position: center top;
+  background-position: center center;
   background-size: auto 1280px;
   background-repeat: no-repeat;
   margin: 0;
+}
+
+@media (max-width: 1080px){
+  .home-body{
+    background-position: center top;
+  }
 }
 
 /* Header and Nav */
@@ -114,8 +120,83 @@ footer{
   width: auto;
 }
 
+@media (max-width: 920px){
+  footer{
+    padding: 0 10px 0 10px;
+  }
+}
+
+
+@media (max-width: 800px){
+  footer{
+    justify-content: space-around;
+  }
+  .copyright{
+    order: 1;
+  }
+  .policies{
+    order:3;
+    text-align: center;
+    justify-content: center;
+    flex-basis: 100%;
+  }
+  .contact{
+    order:2;
+  }
+}
+
+
 /*Home*/
 
 #mid-section{
   height: 100vh;
+}
+
+#home-cta{
+  float: left;
+  text-align: center;
+  margin: 130px 0 0 70px;
+}
+
+#home-cta h1{
+  margin: 0 0 5px 0 ;
+  color: #FBFBFB;
+  font-size: 37px;
+  text-shadow: 2px 1px 1px #111;
+}
+
+#home-cta p{
+  margin: 0 0 5px 0;
+  color: #FBFBFB;
+  font-size: 21px;
+  text-shadow: 2px 1px 1px #111;
+}
+
+.cta-button{
+  height: 30px;
+  width: 300px;
+  color: #8C4300;
+  font-size: 21px;
+  font-weight: bold;
+  font-style: italic;
+  background-color: #FBFBFB;
+  border: solid 1px #0A3540;
+  transition: all 0.3s;
+}
+
+.cta-button:hover{
+  background: none;
+  border: solid 1px #FBFBFB;
+  color: #FBFBFB;
+}
+
+@media (max-width: 1080px){
+  #mid-section{
+    display: flex;
+    justify-content: center;
+    padding-top: 60px;
+  }
+  #home-cta{
+    margin-left: 0;
+  }
 }
