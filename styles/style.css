@@ -11,7 +11,7 @@ html{
   margin: 0;
 }
 
-@media (max-width: 1080px){
+@media screen and (max-width: 1080px){
   .home-body{
     background-position: center top;
   }
@@ -120,14 +120,14 @@ footer{
   width: auto;
 }
 
-@media (max-width: 920px){
+@media screen and (max-width: 920px){
   footer{
     padding: 0 10px 0 10px;
   }
 }
 
 
-@media (max-width: 800px){
+@media screen and (max-width: 800px){
   footer{
     justify-content: space-around;
   }
