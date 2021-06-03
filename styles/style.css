@@ -6,8 +6,9 @@ html{
 .home-body{
   background-image: url("../images/luca-massimilian-NCFCbcNVSVQ-unsplash.jpg");
   background-position: center center;
-  background-size: auto 1280px;
+  background-size: cover;
   background-repeat: no-repeat;
+  background-attachment: fixed;
   margin: 0;
 }
 
