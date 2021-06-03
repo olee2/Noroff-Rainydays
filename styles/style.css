@@ -116,14 +116,14 @@ footer{
   width: auto;
 }
 
-@media screen and (max-width: 920px){
+@media only screen and (max-width: 920px){
   footer{
     padding: 0 10px 0 10px;
   }
 }
 
 
-@media screen and (max-width: 800px){
+@media only screen and (max-width: 800px){
   footer{
     justify-content: space-around;
   }
@@ -145,7 +145,7 @@ footer{
 /*Home*/
 
 #mid-section{
-  height: 100vh;
+  height: 70vh;
 }
 
 #home-cta{
