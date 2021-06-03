@@ -12,12 +12,6 @@ html{
   margin: 0;
 }
 
-@media screen and (max-width: 1080px){
-  .home-body{
-    background-position: center top;
-    background-size: cover;
-  }
-}
 
 /* Header and Nav */
 
