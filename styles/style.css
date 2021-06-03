@@ -14,6 +14,7 @@ html{
 @media screen and (max-width: 1080px){
   .home-body{
     background-position: center top;
+    background-size: cover;
   }
 }
 
@@ -127,7 +128,7 @@ footer{
 }
 
 
-@media screen and (max-width: 600px){
+@media screen and (max-width: 800px){
   footer{
     justify-content: space-around;
   }
