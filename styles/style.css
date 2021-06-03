@@ -5,7 +5,7 @@ html{
 
 .home-body{
   background-image: url("../images/luca-massimilian-NCFCbcNVSVQ-unsplash.jpg");
-  background-position: center center;
+  background-position: center top;
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -116,14 +116,14 @@ footer{
   width: auto;
 }
 
-@media only screen and (max-width: 920px){
+@media only screen and (max-width: 992px){
   footer{
     padding: 0 10px 0 10px;
   }
 }
 
 
-@media only screen and (max-width: 800px){
+@media only screen and (max-width: 768px){
   footer{
     justify-content: space-around;
   }
@@ -145,7 +145,7 @@ footer{
 /*Home*/
 
 #mid-section{
-  height: 70vh;
+  height: 90vh;
 }
 
 #home-cta{
