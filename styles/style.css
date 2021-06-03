@@ -8,7 +8,6 @@ html{
   background-position: center top;
   background-size: cover;
   background-repeat: no-repeat;
-  background-attachment: fixed;
   margin: 0;
 }
 
@@ -186,7 +185,7 @@ footer{
   color: #FBFBFB;
 }
 
-@media (max-width: 1080px){
+@media only screen and (max-width: 992px){
   #mid-section{
     display: flex;
     justify-content: center;
