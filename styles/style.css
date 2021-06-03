@@ -9,6 +9,7 @@ html{
   background-size: cover;
   background-repeat: no-repeat;
   margin: 0;
+  height: 100vh;
 }
 
 
@@ -144,7 +145,7 @@ footer{
 /*Home*/
 
 #mid-section{
-  min-height: 100vh;
+  min-height: 100%;
 }
 
 #home-cta{
