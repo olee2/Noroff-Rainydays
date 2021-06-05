@@ -277,10 +277,12 @@ footer img{
   }
 
   #cta-text{
-    margin-top: 0;
+
   }
 
   .cta-button{
     margin-bottom: 40px;
   }
 }
+
+@media only screen and (max-width: 768px){
