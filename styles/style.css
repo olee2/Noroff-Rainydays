@@ -275,4 +275,12 @@ footer img{
   #mid-section p{
     font-size: 16px;
   }
+
+  #cta-text{
+    margin-top: 0;
+  }
+
+  .cta-button{
+    margin-bottom: 40px;
+  }
 }
