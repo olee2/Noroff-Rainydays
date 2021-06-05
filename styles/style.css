@@ -155,8 +155,8 @@ footer{
   flex-wrap: wrap;
   padding: 0 70px 0 70px;
   background-color: #FBFBFB;
-  border-top: solid 3px #0A3540;
-  border-bottom: solid 3px #0A3540;
+  border-top: solid 1px #0A3540;
+  border-bottom: solid 1px #0A3540;
   font-size: 16px;
 }
 
