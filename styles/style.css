@@ -214,6 +214,10 @@ footer img{
   footer{
     font-size: 12px;
   }
+  footer img{
+    height: 21px;
+    width: auto;
+  }
 }
 /*Home*/
 
