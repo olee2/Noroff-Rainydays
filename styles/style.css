@@ -222,7 +222,7 @@ footer img{
 /*Home*/
 
 #mid-section{
-  min-height: 500px;
+  min-height: 100vh;
 }
 
 #home-cta{
