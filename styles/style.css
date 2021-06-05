@@ -244,7 +244,7 @@ footer img{
 }
 
 .cta-button{
-  height: 30px;
+  min-height: 30px;
   width: 300px;
   color: #8C4300;
   font-size: 21px;
@@ -254,6 +254,8 @@ footer img{
   border: solid 1px #0A3540;
   transition: all 0.3s;
   margin-bottom: 70px;
+  padding: 5px;
+
 }
 
 .cta-button:hover{
