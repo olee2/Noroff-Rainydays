@@ -223,22 +223,20 @@ footer img{
 
 #mid-section{
   min-height: 100vh;
-}
-
-#home-cta{
-  float: left;
   text-align: center;
-  margin: 130px 0 0 70px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
 
-#home-cta h1{
+#mid-section h1{
   margin: 0 0 5px 0 ;
   color: #FBFBFB;
   font-size: 37px;
   text-shadow: 2px 1px 1px #111;
 }
 
-#home-cta p{
+#mid-section p{
   margin: 0 0 5px 0;
   color: #FBFBFB;
   font-size: 21px;
@@ -255,7 +253,7 @@ footer img{
   background-color: #FBFBFB;
   border: solid 1px #0A3540;
   transition: all 0.3s;
-  margin-top: 15px;
+  margin-bottom: 60px;
 }
 
 .cta-button:hover{
@@ -264,16 +262,6 @@ footer img{
   color: #FBFBFB;
 }
 
-@media only screen and (max-width: 1200px){
-  #mid-section{
-    display: flex;
-    justify-content: center;
-
-  }
-  #home-cta{
-    margin: 50px 0 0 0;
-  }
-}
 
 @media only screen and (max-width: 768px){
   #home-cta h1{
