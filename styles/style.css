@@ -41,6 +41,7 @@ html{
 
 header{
   padding-top: 15px;
+
 }
 
 #hamnav{
@@ -48,11 +49,13 @@ header{
   justify-content: flex-end;
   margin-top: 10px;
   margin-right: 70px;
+
 }
 
 #hamitems{
   display: flex;
   padding: 5px 0 5px 0;
+
 }
 
 #hamitems a{
@@ -104,11 +107,13 @@ header{
     font-size: 21px;
     padding: 7px 10px 10px 10px;
     position: absolute;
+    transition: all 0.3s;
 
   }
 
   #hamitems{
     display:none;
+    transition: all 0.3s;
   }
 
   #hamnav input:checked ~ #hamitems {
@@ -120,7 +125,9 @@ header{
   }
   #hamnav input:checked ~ label {
     transform: rotate(90deg);
+
   }
+
 }
 
 @media screen and (max-width: 600px){
