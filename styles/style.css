@@ -11,6 +11,7 @@ html{
   margin: 0;
 }
 
+
 /* Header and Nav */
 
 .logo{
@@ -245,6 +246,7 @@ footer img{
   background-color: #FBFBFB;
   border: solid 1px #0A3540;
   transition: all 0.3s;
+  margin-top: 15px;
 }
 
 .cta-button:hover{
@@ -253,7 +255,7 @@ footer img{
   color: #FBFBFB;
 }
 
-@media only screen and (max-width: 992px){
+@media only screen and (max-width: 1200px){
   #mid-section{
     display: flex;
     justify-content: center;
@@ -263,4 +265,14 @@ footer img{
     margin: 50px 0 0 0;
   }
 }
+
+
+@media only screen and (max-width: 768px){
+  #home-cta h1{
+    font-size: 28px;
+  }
+
+  #home-cta p{
+    font-size: 16px;
+  }
 }
