@@ -277,7 +277,7 @@ footer img{
   }
 
   #cta-text{
-
+    margin-top: 20px;
   }
 
   .cta-button{
@@ -285,4 +285,8 @@ footer img{
   }
 }
 
-@media only screen and (max-width: 768px){
+@media only screen and (max-width: 600px){
+  #cta-text{
+    margin-top: -40px;
+  }
+}
