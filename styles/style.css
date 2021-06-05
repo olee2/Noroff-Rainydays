@@ -118,6 +118,9 @@ header{
     width: 100%;
     position: absolute;
   }
+  #hamnav input:checked ~ label {
+    transform: rotate(90deg);
+  }
 }
 
 @media screen and (max-width: 600px){
