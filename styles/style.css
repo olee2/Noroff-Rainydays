@@ -193,7 +193,6 @@ footer img{
 @media only screen and (max-width: 768px){
   footer{
     justify-content: space-between;
-    font-size: 12px;
   }
   .copyright{
     order: 1;
@@ -211,6 +210,11 @@ footer img{
   }
 }
 
+@media only screen and (max-width: 600px){
+  footer{
+    font-size: 12px;
+  }
+}
 /*Home*/
 
 #mid-section{
