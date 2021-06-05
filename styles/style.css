@@ -20,10 +20,26 @@ html{
 }
 
 .cart{
+  display: block;
   height: 28px;
   width: auto;
-  margin-top: 2px;
-  margin-left: 10px;
+  margin:auto;
+}
+
+.cart-div{
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  margin-top: -1px;
+  margin-left: 5px;
+}
+
+.cart-div:hover{
+  border: solid 1px #8C4300;
+  border-radius: 100%;
 }
 
 .header-div{
@@ -49,7 +65,7 @@ header{
 
 #hamitems{
   display: flex;
-  padding: 5px 0 5px 0;
+  padding: 5px 0 10px 0;
 
 }
 
@@ -78,11 +94,9 @@ header{
 
   }
 
-  .cart{
+  .cart-div{
     margin-left: auto;
-    margin-right: auto;
-    margin-top: 10px;
-    display: block;
+    margin:auto;
   }
 
   #hamnav{
@@ -94,6 +108,7 @@ header{
     display: block;
     width: 100%;
     padding: 10px;
+    margin: 0;
   }
 
   #hamnav label{
@@ -123,7 +138,7 @@ header{
   }
 }
 
-@media screen and (max-width: 600px){
+@media only screen and (max-width: 600px){
   .logo{
     width: 90%;
   }
@@ -133,13 +148,12 @@ header{
 
 .link{
   text-decoration: none;
-  border-bottom: solid 1px #8C4300;
-  border-width: 0px;
   color: #0A3540;
 }
 
 .link:hover{
-  border-bottom: solid 1px #8C4300;
+  text-decoration: underline;
+  text-decoration-color: #8C4300;
 }
 
 .active{
@@ -148,6 +162,7 @@ header{
 
 .active:hover{
   text-decoration: none;
+  border: none;
 }
 
 /* Footer */
@@ -189,6 +204,7 @@ footer img{
 @media only screen and (max-width: 992px){
   footer{
     padding: 0 10px 0 10px;
+
   }
 }
 
