@@ -264,11 +264,11 @@ footer img{
 
 
 @media only screen and (max-width: 768px){
-  #home-cta h1{
+  #mid-section h1{
     font-size: 28px;
   }
 
-  #home-cta p{
+  #mid-section p{
     font-size: 16px;
   }
 }
