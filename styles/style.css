@@ -13,30 +13,21 @@ html{
 
 /* Header and Nav */
 
-header{
-  padding-top: 15px;
-}
-
-nav{
-  float: right;
-  margin: 20px 70px 0 0;
-}
-
-nav ul{
-  display: inline;
-  list-style-type: none;
-}
-
-nav li{
-  display: inline;
-  padding: 0 0 0 20px;
-  font-size: 21px;
-}
-
 .logo{
   height: 220px;
   width: 410px;
   margin: 10px 0 0 30px;
+}
+
+.cart{
+  height: 28px;
+  width: auto;
+  margin-top: 2px;
+  margin-left: 10px;
+}
+
+.cart:hover{
+  border-bottom: solid 1px #8C4300;
 }
 
 .header-div{
@@ -47,22 +38,85 @@ nav li{
   border-bottom: solid 3px #0A3540;
 }
 
-@media only screen and (max-width: 992px){
+header{
+  padding-top: 15px;
+}
+
+#hamnav{
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 10px;
+  margin-right: 70px;
+}
+
+#hamitems{
+  display: flex;
+  padding: 5px 0 5px 0;
+}
+
+#hamitems a{
+  flex-grow: 1;
+  flex-basis: 0;
+  padding: 5px 10px 10px 20px;
+  font-size: 21px;
+  text-align: center;
+}
+
+#hamnav label, #hamburger {
+  display: none;
+}
+
+@media screen and (max-width: 992px){
+
   .header-div{
-    height: 120px;
-    display: flex;
-    flex-direction: row;
-    align-items: flex-end;
-    justify-content: center;
-    ;
+    margin-top: -50px;
   }
 
   .logo{
     display: block;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 0;
+
   }
+
+  .cart{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    display: block;
+  }
+
+  #hamnav{
+    margin-right: 0;
+  }
+
+  #hamitems a{
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+    padding: 10px;
+  }
+
+  #hamnav label{
+    display: block;
+    color: #0A3540;
+    font-size: 21px;
+    padding: 10px;
+    position: absolute;
+
+  }
+
+  #hamitems{
+    display:none;
+  }
+
+  #hamnav input:checked ~ #hamitems {
+    display: block;
+    background: rgba(251, 251, 251);
+    margin-top: 58px;
+    width: 100%
+  }
+
 }
 
 /* Link Style */
@@ -79,6 +133,11 @@ nav li{
 
 .active{
   color: #8C4300;
+}
+
+.active:hover{
+  color: #8C4300;
+  text-decoration: none;
 }
 
 /* Footer */
@@ -117,8 +176,6 @@ footer img{
   margin-right: 5px;
 }
 
-
-
 @media only screen and (max-width: 992px){
   footer{
     padding: 0 10px 0 10px;
@@ -126,10 +183,9 @@ footer img{
   }
 }
 
-
 @media only screen and (max-width: 768px){
   footer{
-    justify-content: space-around;
+    justify-content: space-between;
   }
   .copyright{
     order: 1;
@@ -139,12 +195,13 @@ footer img{
     text-align: center;
     justify-content: center;
     flex-basis: 100%;
+    display: flex;
+    justify-content: space-between;
   }
   .contact{
     order:2;
   }
 }
-
 
 /*Home*/
 
