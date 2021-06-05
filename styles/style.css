@@ -115,7 +115,7 @@ header{
     background: rgba(251, 251, 251);
     margin-top: 58px;
     width: 100%;
-    position: static;
+    position: absolute;
   }
 
 }
