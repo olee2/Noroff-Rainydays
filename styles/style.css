@@ -253,13 +253,17 @@ footer img{
   background-color: #FBFBFB;
   border: solid 1px #0A3540;
   transition: all 0.3s;
-  margin-bottom: 60px;
+  margin-bottom: 70px;
 }
 
 .cta-button:hover{
   background: none;
   border: solid 1px #FBFBFB;
   color: #FBFBFB;
+}
+
+#cta-text{
+  margin-top: -20px;
 }
 
 
