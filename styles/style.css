@@ -68,7 +68,7 @@ then made some adjustments */
 
 #ham-items{
   display: flex;
-  padding: 5px 0 10px 0;
+  padding: 5px 0 5px 0;
 
 }
 
@@ -118,7 +118,7 @@ then made some adjustments */
     box-sizing: border-box;
     display: block;
     width: 100%;
-    padding: 15px 10px 10px 15px;
+    padding: 15px 10px 10px 10px;
     margin: 0;
   }
 
