@@ -8,6 +8,7 @@ body{
   background-size: cover;
   background-repeat: no-repeat;
   margin: 0;
+  padding:0;
 }
 
 /* Header and Nav */
@@ -153,7 +154,6 @@ then made some adjustments */
   }
 
   #ham-nav label{
-    margin-right: 0;
     font-size: 21px;
     padding-top: 7px;
   }
