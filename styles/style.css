@@ -1,14 +1,10 @@
-
-html{
-  font-family: verdana;
-}
-
 body{
   background-position: center top;
   background-size: cover;
   background-repeat: no-repeat;
   margin: 0;
   padding:0;
+  font-family: verdana;
 }
 
 /* Header and Nav */
@@ -66,13 +62,11 @@ then made some adjustments */
   justify-content: flex-end;
   margin-top: 10px;
   margin-right: 70px;
-
 }
 
 #ham-items{
   display: flex;
   align-items: center;
-
 }
 
 #ham-items a{
@@ -93,7 +87,6 @@ then made some adjustments */
 }
 
 @media screen and (max-width: 1200px){
-
   .header-div{
     margin-top: -50px;
   }
@@ -192,6 +185,7 @@ then made some adjustments */
 
 @media only screen and (max-width: 992px){
   .link:hover{
+    /* Removing the hover effect on smaller devices */
     text-decoration: none;
   }
 }
@@ -240,7 +234,6 @@ footer img{
 @media only screen and (max-width: 992px){
   footer{
     padding: 0 10px 0 10px;
-
   }
 }
 
@@ -248,9 +241,11 @@ footer img{
   footer{
     justify-content: space-between;
   }
+
   .copyright{
     order: 1;
   }
+
   .policies{
     order:3;
     text-align: center;
@@ -319,7 +314,7 @@ footer img{
 
 .cta-button:hover{
   background: none;
-  border: solid 1px #FBFBFB;
+  border: solid 2px #FBFBFB;
   color: #FBFBFB;
 }
 
@@ -329,7 +324,6 @@ footer img{
 
 
 @media only screen and (max-width: 1200px){
-
   #home-section{
     box-sizing: border-box;
     align-items: center;
@@ -341,9 +335,19 @@ footer img{
   #home-text{
     margin: 0;
   }
+
   .cta-button{
     margin-left: 0;
     margin-top: 0;
+  }
+}
+
+@media only screen and (max-width: 992px){
+  .cta-button:hover{
+    /* Removing the hover effect on smaller devices */
+    color: #8C4300;
+    background-color: #FBFBFB;
+    border: solid 2px #0A3540;
   }
 }
 
@@ -377,7 +381,6 @@ footer img{
   background-image: url(../images/luo-lei-uBenr_39JPg-unsplash.jpg);
   background-color: #7B9AA6;
 }
-
 
 /* Contact Page Specific */
 
