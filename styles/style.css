@@ -54,7 +54,7 @@ header{
 }
 
 .cart-div:hover{
-  border: solid 2px #8C4300;
+  border: solid 1px #8C4300;
   border-radius: 100%;
 }
 
@@ -172,7 +172,7 @@ then made some adjustments */
 .link:hover{
   text-decoration: underline;
   text-decoration-color: #8C4300;
-  text-decoration-thickness: 2px;
+  text-decoration-thickness: 1px;
 }
 
 .active{
@@ -183,6 +183,7 @@ then made some adjustments */
   text-decoration: none;
   border: none;
 }
+
 
 /* Mid Section */
 section{
