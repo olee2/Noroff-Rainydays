@@ -138,6 +138,10 @@ then made some adjustments */
     position: absolute;
   }
 
+  #ham-nav input:hover ~ label {
+    transform: rotate(45deg);
+  }
+
   #ham-nav input:checked ~ label {
     transform: rotate(90deg);
   }
