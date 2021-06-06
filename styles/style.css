@@ -47,6 +47,7 @@ header{
   align-items: center;
   width: 40px;
   height: 40px;
+  margin-left: 0;
 }
 
 .cart-div:hover{
@@ -126,8 +127,8 @@ then made some adjustments */
   #ham-nav label{
     display: block;
     color: #0A3540;
-    font-size: 21px;
-    padding: 7px 10px 10px 10px;
+    font-size: 28px;
+    padding: 3px 10px 10px 10px;
     position: absolute;
     transition: transform 0.2s;
 
@@ -153,6 +154,8 @@ then made some adjustments */
 
   #ham-nav label{
     margin-right: 0;
+    font-size: 21px;
+    padding-top: 7px;
   }
 }
 
