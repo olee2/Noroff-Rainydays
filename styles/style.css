@@ -148,8 +148,7 @@ then made some adjustments */
 
 @media only screen and (max-width: 600px){
   .logo{
-    height: 176px;
-    width: 328px;
+    width: 90%;
   }
 
   #ham-nav label{
