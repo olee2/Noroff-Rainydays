@@ -147,6 +147,11 @@ then made some adjustments */
 }
 
 @media only screen and (max-width: 600px){
+  .logo{
+    height: 176px;
+    width: 328px;
+  }
+
   #ham-nav label{
     margin-right: 0;
   }
