@@ -4,7 +4,6 @@ html{
 }
 
 body{
-  background-color: grey;
   background-position: center top;
   background-size: cover;
   background-repeat: no-repeat;
@@ -15,6 +14,15 @@ body{
 
 header{
   padding-top: 15px;
+}
+
+.header-div{
+  /* A div to style the navbar */
+  height: 65px;
+  background: rgba(251, 251, 251, 0.8);
+  margin-top: -55px;
+  border-top: solid 3px #0A3540;
+  border-bottom: solid 3px #0A3540;
 }
 
 .logo{
@@ -30,15 +38,6 @@ header{
   margin:auto;
 }
 
-.header-div{
-  /* A div to style the navbar */
-  height: 65px;
-  background: rgba(251, 251, 251, 0.8);
-  margin-top: -55px;
-  border-top: solid 3px #0A3540;
-  border-bottom: solid 3px #0A3540;
-}
-
 .cart-div{
   /* A div to make an even circle when hovering over the cart */
   box-sizing: border-box;
@@ -52,7 +51,7 @@ header{
 }
 
 .cart-div:hover{
-  border: solid 1px #8C4300;
+  border: solid 2px #8C4300;
   border-radius: 100%;
 }
 
@@ -81,12 +80,12 @@ then made some adjustments */
   text-align: center;
 }
 
-#ham-nav label, #hamburger {
-  display: none;
-}
-
 #ham-nav label{
   margin-right: 20px;
+}
+
+#ham-nav label, #hamburger {
+  display: none;
 }
 
 @media screen and (max-width: 992px){
@@ -111,11 +110,15 @@ then made some adjustments */
     margin-right: 0;
   }
 
+  #ham-items{
+    display:none;
+  }
+
   #ham-items a{
     box-sizing: border-box;
     display: block;
     width: 100%;
-    padding: 10px;
+    padding: 15px 10px 10px 15px;
     margin: 0;
   }
 
@@ -127,10 +130,6 @@ then made some adjustments */
     position: absolute;
     transition: transform 0.2s;
 
-  }
-
-  #ham-items{
-    display:none;
   }
 
   #ham-nav input:checked ~ #ham-items {
@@ -166,6 +165,7 @@ then made some adjustments */
 .link:hover{
   text-decoration: underline;
   text-decoration-color: #8C4300;
+  text-decoration-thickness: 2px;
 }
 
 .active{
@@ -259,6 +259,7 @@ footer img{
 
 #home-body{
   background-image: url("../images/luca-massimilian-NCFCbcNVSVQ-unsplash(2).jpg");
+  background-color: #949AAA;
 }
 
 #home-section{
@@ -355,6 +356,7 @@ footer img{
 
 #about-body{
   background-image: url(../images/luo-lei-uBenr_39JPg-unsplash.jpg);
+  background-color: #7B9AA6;
 }
 
 
@@ -362,4 +364,5 @@ footer img{
 
 #contact-body{
   background-image: url(../images/lucas-wesney-ZNz5UPRb2N8-unsplash.jpg);
+  background-color: #AED8F2;
 }
