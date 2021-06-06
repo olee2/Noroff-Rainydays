@@ -85,6 +85,10 @@ then made some adjustments */
   display: none;
 }
 
+#ham-nav label{
+  margin-right: 20px;
+}
+
 @media screen and (max-width: 992px){
 
   .header-div{
@@ -143,8 +147,8 @@ then made some adjustments */
 }
 
 @media only screen and (max-width: 600px){
-  .logo{
-    width: 90%;
+  #ham-nav label{
+    margin-right: 0;
   }
 }
 
