@@ -113,6 +113,7 @@ then made some adjustments */
 
   #ham-items{
     display:none;
+    border-bottom: solid 3px #0A3540;
   }
 
   #ham-items a{
