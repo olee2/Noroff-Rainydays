@@ -103,9 +103,8 @@ then made some adjustments */
   }
 
   .cart-div{
-    margin-left: auto;
     margin:auto;
-
+    margin-top: -5px;
   }
 
   #ham-nav{
