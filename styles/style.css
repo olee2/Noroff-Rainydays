@@ -46,8 +46,6 @@ header{
   align-items: center;
   width: 40px;
   height: 40px;
-  margin-top: -1px;
-  margin-left: 7px;
 }
 
 .cart-div:hover{
@@ -68,7 +66,7 @@ then made some adjustments */
 
 #ham-items{
   display: flex;
-  padding: 5px 0 5px 0;
+  align-items: center;
 
 }
 
@@ -88,7 +86,7 @@ then made some adjustments */
   display: none;
 }
 
-@media screen and (max-width: 992px){
+@media screen and (max-width: 1200px){
 
   .header-div{
     margin-top: -50px;
@@ -104,6 +102,7 @@ then made some adjustments */
   .cart-div{
     margin-left: auto;
     margin:auto;
+
   }
 
   #ham-nav{
@@ -316,7 +315,7 @@ footer img{
     align-items: center;
     flex-direction: column;
     justify-content: space-between;
-    padding: 100px 0 110px 0;
+    padding: 90px 0 110px 0;
   }
 
   #home-text{
