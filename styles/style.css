@@ -36,6 +36,7 @@ header{
   height: 28px;
   width: auto;
   margin:auto;
+
 }
 
 .cart-div{
@@ -73,7 +74,8 @@ then made some adjustments */
 #ham-items a{
   flex-grow: 1;
   flex-basis: 0;
-  margin: 5px 10px 10px 20px;
+  margin: 5px 0px 10px 20px;
+  padding-left: 10px;
   font-size: 21px;
   text-align: center;
 }
