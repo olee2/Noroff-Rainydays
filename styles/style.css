@@ -149,6 +149,7 @@ then made some adjustments */
 
 @media only screen and (max-width: 992px){
   .cart-div:hover{
+    /* Removing the hover effect on smaller devices */
     border: none;
   }
 
