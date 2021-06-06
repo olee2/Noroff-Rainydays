@@ -59,7 +59,7 @@ header{
 /* The code for the hamburger menu I found at https://code-boxx.com/simple-responsive-pure-css-hamburger-menu/,
 then made some adjustments */
 
-.ham-nav{
+#ham-nav{
   display: flex;
   justify-content: flex-end;
   margin-top: 10px;
@@ -67,13 +67,13 @@ then made some adjustments */
 
 }
 
-.ham-items{
+#ham-items{
   display: flex;
   padding: 5px 0 10px 0;
 
 }
 
-.ham-items a{
+#ham-items a{
   flex-grow: 1;
   flex-basis: 0;
   margin: 5px 10px 10px 20px;
@@ -81,7 +81,7 @@ then made some adjustments */
   text-align: center;
 }
 
-.ham-nav label, .hamburger {
+#ham-nav label, #hamburger {
   display: none;
 }
 
@@ -103,11 +103,11 @@ then made some adjustments */
     margin:auto;
   }
 
-  .ham-nav{
+  #ham-nav{
     margin-right: 0;
   }
 
-  .ham-items a{
+  #ham-items a{
     box-sizing: border-box;
     display: block;
     width: 100%;
@@ -115,7 +115,7 @@ then made some adjustments */
     margin: 0;
   }
 
-  .ham-nav label{
+  #ham-nav label{
     display: block;
     color: #0A3540;
     font-size: 21px;
@@ -125,11 +125,11 @@ then made some adjustments */
 
   }
 
-  .ham-items{
+  #ham-items{
     display:none;
   }
 
-  .ham-nav input:checked ~ .ham-items {
+  #ham-nav input:checked ~ #ham-items {
     display: block;
     background: rgba(251, 251, 251);
     margin-top: 58px;
@@ -137,7 +137,7 @@ then made some adjustments */
     position: absolute;
   }
 
-  .ham-nav input:checked ~ label {
+  #ham-nav input:checked ~ label {
     transform: rotate(90deg);
   }
 }
@@ -347,4 +347,11 @@ footer img{
 
 #about-body{
   background-image: url(../images/luo-lei-uBenr_39JPg-unsplash.jpg);
+}
+
+
+/* Contact Page Specific */
+
+#contact-body{
+  background-image: url(../images/lucas-wesney-ZNz5UPRb2N8-unsplash.jpg);
 }
