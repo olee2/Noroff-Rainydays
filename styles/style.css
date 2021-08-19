@@ -4,6 +4,12 @@ body{
   background-size: cover;
 }
 
+h1{
+  font-size: 37px;
+  margin: 0;
+  color: #0A3540;
+}
+
 h2{
   margin: 0;
   font-size: 28px;
@@ -363,7 +369,7 @@ footer img{
 
 
 #home-section{
-  height: calc(100vh - 230px);
+  height: calc(100vh - 250px);
   min-height: 350px;
   max-height: 750px;
   box-sizing: border-box;
@@ -387,6 +393,7 @@ footer img{
 #home-text h1{
   margin: 0 0 5px 0 ;
   font-size: 37px;
+  color: #FBFBFB;
 
 }
 
@@ -456,7 +463,14 @@ footer img{
 }
 
 
-.product-spec{
+.product-spec-back{
+  height: calc(100vh - 250px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.product-spec-grid{
   box-sizing: border-box;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -467,29 +481,29 @@ footer img{
     "img form info"
     "img form info"
     "img form info";
-  margin: 20px 70px;
   padding: 20px 70px;
-  height: calc(100vh - 290px);
+  max-height: 400px;
+  max-width: 1400px;
   background-color: #FBFBFB;
   box-shadow: 1px 1px 10px ;
 }
 
-.product-spec .cta-button:hover{
+.product-spec-grid .cta-button:hover{
   background-color: #0A3540;
   border: solid 2px #0A3540;
   color: #FBFBFB;
 }
 
-.product-spec img{
+.product-spec-grid img{
   height: 350px;
   margin-top: 20px;
 }
 
-.product-spec .cta-button{
+.product-spec-grid .cta-button{
   width: 100%;
 }
 
-.product-spec .price{
+.product-spec-grid .price{
   margin-bottom: 10px;
 }
 
@@ -756,10 +770,44 @@ footer img{
   grid-template-rows: 70px 1fr 1fr;
   padding-bottom: 20px;
   align-items: center;
-  margin: 70px 70px;
-  padding:  70px 70px 70px 70px;
+  margin: 70px;
+  padding:  70px;
   background-color: #FBFBFB;
   box-shadow: 1px 1px 10px ;
+}
+
+@media only screen and (max-width: 992px){
+  #collection-grid{
+    padding: 10px;
+    margin: 0px;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    box-shadow: none;
+    grid-template-rows: 100px 1fr 1fr;
+  }
+}
+
+@media only screen and (max-width: 768px){
+  #collection-grid{
+    margin: 0;
+  }
+}
+
+@media only screen and (max-width: 600px){
+  #collection-grid{
+    padding: 0;
+    grid-template-areas:
+      "collection-header"
+      "thunder"
+      "storm"
+      "wind"
+      "fog";
+    grid-template-columns: auto;
+    grid-template-rows: 100px 1fr 1fr 1fr 1fr;
+    grid-row-gap: 0;
+    margin: 0;
+  }
+
 }
 
 /* About Page Specific */
@@ -792,6 +840,10 @@ footer img{
   color: #3B3B3B;
 }
 
+#about-text h1{
+  margin-bottom: 40px;
+}
+
 #about-text h2{
   font-size: 21px;
   color: #0A3540;
@@ -815,7 +867,7 @@ footer img{
     margin: 0 auto;
   }
 
-  #about-text h2{
+  #about-text h2, h1{
     text-align: center;
   }
   #about-text hr{
@@ -911,7 +963,7 @@ footer img{
 
 @media only screen and (max-width: 1600px){
   #contact-body{
-    background-size: 1600px auto;
+    background-size: 1600px 100%;
     background-position: center top;
   }
 
