@@ -363,7 +363,7 @@ footer img{
 
 
 #home-section{
-  height: calc(100vh - 250px);
+  height: calc(100vh - 230px);
   min-height: 350px;
   max-height: 750px;
   box-sizing: border-box;
