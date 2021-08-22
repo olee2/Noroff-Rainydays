@@ -750,14 +750,10 @@ footer img{
 
 @media only screen and (max-width: 992px){
   .product-spec-grid{
-    box-sizing: border-box;
-    display: grid;
     padding: 20px;
-    margin: 70px 0;
     grid-row-gap: 0px;
     grid-column-gap: 0px;
     grid-template-columns: auto;
-    grid-template-rows: 70px auto auto auto;
     grid-template-areas:
       "header"
       "img"
@@ -765,11 +761,24 @@ footer img{
       "info";
     height: auto;
     width: 450px;
-    box-shadow: 1px 1px 10px ;
   }
 
 }
 @media only screen and (max-width: 768px){
+  .product-spec-grid{
+    padding: 20px;
+    margin: 0;
+    grid-row-gap: 0px;
+    grid-column-gap: 0px;
+    grid-template-columns: auto;
+    grid-template-areas:
+      "header"
+      "img"
+      "form"
+      "info";
+    height: auto;
+    width: 100%;
+  }
 
 }
 
