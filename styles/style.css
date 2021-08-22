@@ -550,11 +550,12 @@ footer img{
   display: grid;
   padding: 35px;
   margin: 70px 0;
+  grid-row-gap: 20px;
+  grid-column-gap: 20px;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 70px auto auto auto;
   grid-template-areas:
     "header form"
-    "img form"
     "img form"
     "img info";
   height: 650px;
@@ -564,8 +565,9 @@ footer img{
 }
 
 .product-spec-grid img{
-  max-width: 450px;
-  margin: 0 0 15px 0px;
+  max-width: 400px;
+  margin: 0px 0 25px 0px;
+
 }
 
 .product-spec-grid .cta-button:hover{
@@ -747,6 +749,24 @@ footer img{
 }
 
 @media only screen and (max-width: 992px){
+  .product-spec-grid{
+    box-sizing: border-box;
+    display: grid;
+    padding: 20px;
+    margin: 70px 0;
+    grid-row-gap: 0px;
+    grid-column-gap: 0px;
+    grid-template-columns: auto;
+    grid-template-rows: 70px auto auto auto;
+    grid-template-areas:
+      "header"
+      "img"
+      "form"
+      "info";
+    height: auto;
+    width: 450px;
+    box-shadow: 1px 1px 10px ;
+  }
 
 }
 @media only screen and (max-width: 768px){
