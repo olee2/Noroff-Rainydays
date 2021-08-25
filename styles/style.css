@@ -794,8 +794,9 @@ footer img{
   #add-to-cart1:checked ~ .added, #add-to-cart2:checked ~ .added, #add-to-cart3:checked ~ .added, #add-to-cart4:checked ~ .added {
     height: auto;
     text-align: center;
-    transform: translate(-50%, 130%);
+    transform: translate(-50%, 135%);
     height: 300px;
+    width: 100%;
   }
 
   .product-img{
