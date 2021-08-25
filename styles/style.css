@@ -735,12 +735,12 @@ footer img{
 
 #add-to-cart1:checked ~ .added, #add-to-cart2:checked ~ .added, #add-to-cart3:checked ~ .added, #add-to-cart4:checked ~ .added {
   display: flex;
+  color: #FBFBFB;
   flex-direction: column;
   justify-content: space-around;
   box-sizing: border-box;
-  background-color: #FBFBFB;
+  background-color: #0A3540;
   position: absolute;
-  box-shadow: 1px 1px 10px;
   height: auto;
   text-align: center;
   transform: translate(-50%, 3%);
@@ -792,7 +792,6 @@ footer img{
   }
 
   #add-to-cart1:checked ~ .added, #add-to-cart2:checked ~ .added, #add-to-cart3:checked ~ .added, #add-to-cart4:checked ~ .added {
-    box-shadow: 1px 1px 10px;
     height: auto;
     text-align: center;
     transform: translate(-50%, 130%);
