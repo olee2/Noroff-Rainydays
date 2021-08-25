@@ -737,6 +737,7 @@ footer img{
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  box-sizing: border-box;
   background-color: #FBFBFB;
   position: absolute;
   box-shadow: 1px 1px 10px;
@@ -746,7 +747,7 @@ footer img{
   padding: 20px;
   top: 50%;
   left: 50%;
-  width: 400px;
+  width: 350px;
   height: 260px;
 }
 
@@ -767,8 +768,8 @@ footer img{
     grid-template-areas:
       "header"
       "img"
-      "info"
-      "form";
+      "form"
+      "info";
     height: auto;
     width: 450px;
   }
@@ -787,6 +788,15 @@ footer img{
 
   .product-spec-grid{
     box-shadow: none;
+    margin: 0;
+  }
+
+  #add-to-cart1:checked ~ .added, #add-to-cart2:checked ~ .added, #add-to-cart3:checked ~ .added, #add-to-cart4:checked ~ .added {
+    box-shadow: 1px 1px 10px;
+    height: auto;
+    text-align: center;
+    transform: translate(-50%, 130%);
+    height: 300px;
   }
 
   .product-img{
