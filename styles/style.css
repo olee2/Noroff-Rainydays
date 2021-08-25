@@ -489,6 +489,12 @@ footer img{
     grid-column-gap: 10px;
     grid-row-gap: 10px;
   }
+
+  #product-grid .cta-button:hover{
+    color: #8C4300;
+    background-color: #FBFBFB;
+    border: solid 2px #0A3540;
+  }
 }
 
 @media only screen and (max-width: 768px){
@@ -538,6 +544,13 @@ footer img{
 
 /** Product Related **/
 
+.product-body{
+  background-color:#FBFBFB;
+  background-attachment: fixed;
+  background-position: 50% 20%;
+  background-image: url("../images/luca-massimilian-NCFCbcNVSVQ-unsplash(3).jpg");
+}
+
 .product-spec-back{
   min-height: auto;
   display: flex;
@@ -565,7 +578,7 @@ footer img{
 
 .product-spec-grid img{
   max-width: 400px;
-  margin: 0px 0 25px 0px;
+  margin: 0px auto 25px auto;
 
 }
 
@@ -662,7 +675,7 @@ footer img{
 .product-form{
   display: grid;
   padding: 20px;
-  min-height: 200px;
+  min-height: 220px;
   grid-template-areas:
   "size"
   "color"
@@ -670,10 +683,6 @@ footer img{
   "button";
   grid-area: form;
   border: solid 2px #0A3540;
-}
-
-.label{
-  font-size: 16px;
 }
 
 .radio-label::after {
@@ -763,6 +772,11 @@ footer img{
     height: auto;
     width: 450px;
   }
+  .product-spec-grid .cta-button:hover{
+    color: #8C4300;
+    background-color: #FBFBFB;
+    border: solid 2px #0A3540;
+  }
 
 }
 @media only screen and (max-width: 768px){
@@ -826,6 +840,12 @@ footer img{
     grid-row-gap: 10px;
     box-shadow: none;
     grid-template-rows: 100px 1fr 1fr;
+  }
+
+  #collection-grid .cta-button:hover{
+    color: #8C4300;
+    background-color: #FBFBFB;
+    border: solid 2px #0A3540;
   }
 }
 
