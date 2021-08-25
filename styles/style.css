@@ -347,7 +347,7 @@ footer img{
 }
 
 @media only screen and (max-width: 600px){
-  footer a, p{
+  footer a, footer p{
     font-size: 12px;
   }
   footer img{
@@ -548,17 +548,16 @@ footer img{
 .product-spec-grid{
   box-sizing: border-box;
   display: grid;
-  padding: 35px;
+  padding: 20px;
   margin: 70px 0;
   grid-row-gap: 20px;
   grid-column-gap: 20px;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 70px auto auto auto;
+  grid-template-rows: 70px auto auto;
   grid-template-areas:
-    "header form"
-    "img form"
-    "img info";
-  height: 650px;
+    "header info"
+    "img info"
+    "img form";
   width: 900px;
   background-color: #FBFBFB;
   box-shadow: 1px 1px 10px ;
@@ -651,20 +650,26 @@ footer img{
 
 .product-info{
   grid-area: info;
+  border: solid 2px #0A3540;
+  padding: 20px;
+}
+
+.product-info ul{
+  padding-left: 15px;
+  padding-bottom: 0;
 }
 
 .product-form{
   display: grid;
   padding: 20px;
   min-height: 200px;
-  margin-bottom: 20px;
   grid-template-areas:
   "size"
   "color"
   "number"
   "button";
   grid-area: form;
-  border: solid 1px;
+  border: solid 2px #0A3540;
 }
 
 .label{
@@ -695,9 +700,6 @@ footer img{
 
 .product-header{
   grid-area: header;
-}
-
-.product-info{
 }
 
 .price{
@@ -751,38 +753,32 @@ footer img{
 @media only screen and (max-width: 992px){
   .product-spec-grid{
     padding: 20px;
-    grid-row-gap: 0px;
-    grid-column-gap: 0px;
+    grid-row-gap: 20px;
     grid-template-columns: auto;
     grid-template-areas:
       "header"
       "img"
-      "form"
-      "info";
+      "info"
+      "form";
     height: auto;
     width: 450px;
   }
 
 }
 @media only screen and (max-width: 768px){
-  .product-spec-grid{
-    padding: 20px;
-    margin: 0;
-    grid-row-gap: 0px;
-    grid-column-gap: 0px;
-    grid-template-columns: auto;
-    grid-template-areas:
-      "header"
-      "img"
-      "form"
-      "info";
-    height: auto;
-    width: 100%;
-  }
 
 }
 
 @media only screen and (max-width: 600px){
+
+  .product-spec-grid{
+    box-shadow: none;
+  }
+
+  .product-img{
+    width: 330px;
+  }
+
   .product{
     box-sizing: border-box;
     margin: 0;
@@ -817,7 +813,7 @@ footer img{
   align-items: center;
   margin: 70px auto;
   padding:  70px;
-  max-width: 1200px;
+  max-width: 900px;
   background-color: #FBFBFB;
   box-shadow: 1px 1px 10px ;
 }
