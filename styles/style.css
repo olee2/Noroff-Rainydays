@@ -72,7 +72,6 @@ a{
     margin: 0;
     width: 100%;
     box-shadow: none;
-    background: rgb(251, 251, 251, 80%);
   }
 }
 
@@ -1042,10 +1041,6 @@ input{
 
 
 @media only screen and (max-width: 768px){
-  .customer-details{
-    margin: 70px;
-    background: rgb(251, 251, 251, 80%);
-  }
   #form{
     grid-template-areas:
       "form1"
