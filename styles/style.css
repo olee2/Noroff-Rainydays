@@ -573,7 +573,7 @@ footer img{
   }
 }
 
-@media only screen and (max-width: 600px){ 
+@media only screen and (max-width: 600px){
   #home-section{
     padding-top: 20px;
   }
@@ -1182,9 +1182,9 @@ input{
 #about-text{
   max-width: 600px;
   background: rgba(192, 230, 240, 0.8);
-  border: 1px solid #0A3540;
   padding: 40px;
   margin-left: 70px;
+  box-shadow: 1px 1px 10px ;
 
 }
 
@@ -1255,8 +1255,7 @@ input{
 
 .contact-section{
   background: rgba(192, 230, 240, 0.8);
-  border: 1px solid #0A3540;
-  border-radius: 5px;
+  box-shadow: 1px 1px 10px ;
   padding: 40px;
   width: 250px;
   height: 250px;
