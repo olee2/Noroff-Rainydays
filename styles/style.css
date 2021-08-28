@@ -574,6 +574,9 @@ footer img{
 }
 
 @media only screen and (max-width: 600px){
+  .home-body{
+    background-size: cover;
+  }
 
   #home-section{
     padding-top: 20px;
