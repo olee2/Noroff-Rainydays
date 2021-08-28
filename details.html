@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Rainydays | Details</title>
+    <meta name="description" content="Rainydays Details">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="styles/style.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  </head>
+  <body class="product-body">
+    <header>
+      <a href="index.html"><img src="images/RainyDays_Logo.png" class="logo" alt="Rainydays Mountain Logo"></a>
+      <div class="header-div">
+        <nav id="ham-nav">
+          <input type="checkbox" id="hamburger"/>
+          <label for="hamburger">&#9776;</label>
+          <div id="ham-items">
+            <a href="index.html" class="link">Home</a>
+            <a href="collection.html" class="link">Collection</a>
+            <a href="about.html" class="link">About</a>
+            <a href="contact.html" class="link">Contact</a>
+            <a href="cart.html">
+            <div class="cart-div">
+              <img src="icons/cart.png" class="cart">
+            </div>
+            </a>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <main class="main-height">
+      <section class="customer-details background">
+        <h1 class="header">Customer Details</h1>
+        <form id="form">
+          <div id="form1">
+            <label for "email" id="email-label">Email</label>
+            <input type="email" id="email" name="email" placeholder="Input email" required>
+            <label for="first" id="first-label">First Name</label>
+            <input type="text" id="first" name="first" placeholder="Input First Name" required>
+            <label for="last" id="last-label">Last Name</label>
+            <input type="text" id="last" name="last" placeholder="Input Last Name" required>
+          </div>
+
+          <div id="form2">
+            <label for "phone" id="phone-label">Phone</label>
+            <input type="tel" id="phone" name="phone" placeholder="xxx xx xxx">
+            <label for="adress" id="adress-label">Adress</label>
+            <input type="text" id="adress" name="adress" placeholder="Input Adress" required>
+            <label for="postal" id="postal-label">Postal/Zip</label>
+            <input type="text" id="postal" name="postal" placeholder="Input Postal/Zip" required>
+          </div>
+          <a class="cta-button" href="summary.html">Submit</a>
+        </form>
+      </section>
+    </main>
+    <footer>
+      <div class="copyright footer-flex">
+        <img src="icons/copyright.png" alt="Copyright Symbol">
+        <p>Rainydays LTD, 2021</p>
+      </div>
+      <div class="policies footer-flex">
+        <a href="#" class="link">Privacy Policy</a>
+        <p>|</p>
+        <a href="#" class="link">Terms & Conditions</a>
+        <p>|</p>
+        <a href="#" class="link">Cookies Policy</a>
+      </div>
+      <div class="footer-contact footer-flex">
+        <a href="contact.html" class="link">Contact</a>
+        <img src="icons/contact.png" alt="Phone and Envelope Symbol">
+      </div>
+    </footer>
+  </body>
+</html>
