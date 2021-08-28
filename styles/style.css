@@ -8,11 +8,13 @@ h1{
   font-size: 37px;
   margin: 0;
   color: #0A3540;
+  text-align: center;
 }
 
 h2{
   margin: 0;
   font-size: 28px;
+  font-weight: normal;
 }
 
 h3{
@@ -42,6 +44,39 @@ hr{
 a{
   text-decoration: none;
 }
+
+.main-height{
+  min-height: calc(100vh - 230px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.background{
+  background-color: #FBFBFB;
+  box-shadow: 1px 1px 10px ;
+  padding: 20px;
+  margin: 70px;
+  min-width: 900px;
+}
+
+@media only screen and (max-width: 1280px){
+  .background{
+    min-width: auto;
+  }
+}
+
+@media only screen and (max-width: 600px){
+
+  .background{
+    margin: 0;
+    width: 100%;
+    box-shadow: none;
+    background: rgb(251, 251, 251, 80%);
+  }
+}
+
+
 
 /* Header and Nav */
 
@@ -130,7 +165,6 @@ then made some adjustments */
     display: block;
     margin-left: auto;
     margin-right: auto;
-
   }
 
   .cart-div{
@@ -158,8 +192,8 @@ then made some adjustments */
   #ham-nav label{
     display: block;
     color: #0A3540;
-    font-size: 28px;
-    padding: 3px 10px 10px 10px;
+    font-size: 25px;
+    padding: 3px 12px 10px 10px;
     position: absolute;
     transition: transform 0.2s;
 
@@ -179,6 +213,7 @@ then made some adjustments */
 
   #ham-nav input:checked ~ label {
     transform: rotate(90deg);
+
   }
 }
 
@@ -195,13 +230,13 @@ then made some adjustments */
 
 @media only screen and (max-width: 600px){
   .logo{
-    width: 90%;
+    width: 80%;
   }
 
   #ham-nav label{
     font-size: 21px;
     padding-top: 7px;
-    margin-right: 0;
+    margin-right: 10px;
   }
 }
 
@@ -227,9 +262,10 @@ then made some adjustments */
 }
 
 .cta-button{
+  grid-area: button;
   min-height: 30px;
   display: block;
-  width: 300px;
+  width: 100%;
   color: #8C4300;
   font-size: 21px;
   font-weight: bold;
@@ -243,8 +279,8 @@ then made some adjustments */
 }
 
 .cta-button:hover{
-  background: none;
-  border: solid 2px #FBFBFB;
+  background-color: #0A3540;
+  border: solid 2px #0A3540;
   color: #FBFBFB;
 }
 
@@ -404,6 +440,13 @@ footer img{
 #home-text .cta-button{
   margin-top: 20px;
   text-shadow: none;
+  width: 300px;
+}
+
+#home-text .cta-button:hover{
+  background: none;
+  border: solid 2px #FBFBFB;
+  color: #FBFBFB;
 }
 
 #product-grid{
@@ -414,7 +457,7 @@ footer img{
   grid-column-gap: 20px;
   grid-row-gap: 20px;
   grid-template-areas:
-    "... collection-header collection-header ..."
+    "... header header ..."
     "wind storm thunder fog";
   align-items: center;
   padding: 20px 70px;
@@ -449,7 +492,7 @@ footer img{
 
   #product-grid{
     grid-template-areas:
-      "collection-header collection-header"
+      "header header"
       "thunder storm"
       "wind fog";
     grid-template-columns: 1fr 1fr;
@@ -489,12 +532,6 @@ footer img{
     grid-column-gap: 10px;
     grid-row-gap: 10px;
   }
-
-  #product-grid .cta-button:hover{
-    color: #8C4300;
-    background-color: #FBFBFB;
-    border: solid 2px #0A3540;
-  }
 }
 
 @media only screen and (max-width: 768px){
@@ -526,11 +563,10 @@ footer img{
     margin-top: 0px;
   }
 
-
   #product-grid{
     padding: 0;
     grid-template-areas:
-      "collection-header"
+      "header"
       "thunder"
       "storm"
       "wind"
@@ -538,7 +574,6 @@ footer img{
     grid-template-columns: auto;
     grid-template-rows: 70px 1fr 1fr 1fr 1fr;
     grid-row-gap: 0;
-
   }
 }
 
@@ -561,7 +596,6 @@ footer img{
 .product-spec-grid{
   box-sizing: border-box;
   display: grid;
-  padding: 20px;
   margin: 70px 0;
   grid-row-gap: 20px;
   grid-column-gap: 20px;
@@ -572,24 +606,12 @@ footer img{
     "img info"
     "img form";
   width: 900px;
-  background-color: #FBFBFB;
-  box-shadow: 1px 1px 10px ;
 }
 
 .product-spec-grid img{
   max-width: 400px;
-  margin: 0px auto 25px auto;
+  margin: auto auto;
 
-}
-
-.product-spec-grid .cta-button:hover{
-  background-color: #0A3540;
-  border: solid 2px #0A3540;
-  color: #FBFBFB;
-}
-
-.product-spec-grid .cta-button{
-  width: 100%;
 }
 
 .product-spec-grid .price{
@@ -597,15 +619,16 @@ footer img{
 }
 
 .product{
-  background: rgba(251, 251, 251);
+  background-color: #FBFBFB;
+  box-shadow: 1px 1px 10px ;
+  padding: 20px;
   display: flex;
   justify-content: space-around;
   flex-direction: column;
   align-items: center;
-  box-shadow: 1px 1px 10px ;
   min-width: 250px;
   color: #0A3540;
-  padding: 20px;
+
 }
 
 .product img{
@@ -620,19 +643,8 @@ footer img{
   margin: 10px 0;
 }
 
-.product .cta-button{
-  width: 100%;
-}
-
-.product .cta-button:hover{
-  background-color: #0A3540;
-  border: solid 2px #0A3540;
-  color: #FBFBFB;
-}
-
-.collection-header{
-  grid-area: collection-header;
-  margin: 0;
+.header{
+  grid-area: header;
   text-align: center;
   color: #0A3540;
 }
@@ -685,6 +697,10 @@ footer img{
   border: solid 2px #0A3540;
 }
 
+.product-form #number{
+  width: 50px;
+}
+
 .radio-label::after {
   content: "\A";
   white-space: pre;
@@ -714,6 +730,7 @@ footer img{
 .price{
   font-weight: bold;
   letter-spacing: 1px;
+  grid-area: price;
 }
 
 #add-to-cart1, #add-to-cart2, #add-to-cart3, #add-to-cart4, .added {
@@ -773,15 +790,6 @@ footer img{
     height: auto;
     width: 450px;
   }
-  .product-spec-grid .cta-button:hover{
-    color: #8C4300;
-    background-color: #FBFBFB;
-    border: solid 2px #0A3540;
-  }
-
-}
-@media only screen and (max-width: 768px){
-
 }
 
 @media only screen and (max-width: 600px){
@@ -792,14 +800,12 @@ footer img{
   }
 
   #add-to-cart1:checked ~ .added, #add-to-cart2:checked ~ .added, #add-to-cart3:checked ~ .added, #add-to-cart4:checked ~ .added {
-    height: auto;
-    text-align: center;
-    transform: translate(-50%, 130%);
+    transform: translate(-50%, 100%);
     height: 350px;
     width: 100%
   }
 
-  .product-img{
+  .product-spec-grid .product-img{
     width: 330px;
   }
 
@@ -825,21 +831,17 @@ footer img{
 #collection-grid{
   box-sizing: border-box;
   display: grid;
-  grid-column-gap: 70px;
-  grid-row-gap: 70px;
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
   grid-template-areas:
-    "collection-header collection-header"
+    "header header"
     "thunder storm"
     "wind fog";
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 70px 1fr 1fr;
   padding-bottom: 20px;
   align-items: center;
-  margin: 70px auto;
-  padding:  70px;
   max-width: 900px;
-  background-color: #FBFBFB;
-  box-shadow: 1px 1px 10px ;
 }
 
 @media only screen and (max-width: 992px){
@@ -850,12 +852,6 @@ footer img{
     grid-row-gap: 10px;
     box-shadow: none;
     grid-template-rows: 100px 1fr 1fr;
-  }
-
-  #collection-grid .cta-button:hover{
-    color: #8C4300;
-    background-color: #FBFBFB;
-    border: solid 2px #0A3540;
   }
 }
 
@@ -869,7 +865,7 @@ footer img{
   #collection-grid{
     padding: 0;
     grid-template-areas:
-      "collection-header"
+      "header"
       "thunder"
       "storm"
       "wind"
@@ -880,6 +876,303 @@ footer img{
     margin: 0;
   }
 
+}
+
+/* Shopping Cart */
+
+
+.shopping-cart{
+  box-sizing: border-box;
+  display: grid;
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+  grid-template-areas:
+    "header header header header header"
+    "item1 item1 item1 ... ..."
+    "item2 item2 item2 summary summary"
+    ;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto auto auto ;
+  width: 900px;
+}
+
+#item1{
+  grid-area: item1;
+}
+
+#item2{
+  grid-area: item2;
+}
+
+.cart-item{
+  color: #0A3540;
+  border: solid 1px #0A3540;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 50px 1fr 1fr 1fr;
+  grid-template-areas:
+    "header header header"
+    "img color price"
+    "img size ..."
+    "img number delete";
+  height: 200px;
+}
+
+.cart-item img{
+  height: 100px;
+  margin: auto 0;
+}
+
+.cart-item #number{
+  width: 50px;
+}
+
+.delete{
+  grid-area: delete;
+  color: #0A3540;
+}
+
+.sum{
+  grid-area: sum;
+}
+
+.price1{
+  grid-area: price1;
+}
+
+.price2{
+  grid-area: price2;
+}
+
+.total{
+  grid-area: total;
+}
+
+.summary hr{
+  grid-area: hr;
+  width: 100%;
+  margin-top: 2px;
+  margin-right: 5px;
+}
+
+.summary{
+  grid-area: summary;
+  align-self: flex-end;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto 5px auto auto;
+  grid-template-areas:
+    "sum sum ... price1"
+    "hr hr hr hr"
+    "total ... ... price2"
+    "button button button button";
+}
+
+.summary .cta-button{
+  margin-top: 10px;
+}
+
+@media only screen and (max-width: 768px){
+  .shopping-cart{
+    grid-template-areas:
+      "header"
+      "item1"
+      "item2"
+      "summary"
+      ;
+    grid-template-columns: auto;
+    grid-template-rows: auto 1fr 1fr 100px;
+  }
+}
+
+/* Customer Details */
+
+.customer-details{
+  width: 700px;
+  display: block;
+  margin: auto;
+  flex-direction: column;
+}
+
+.customer-details .header{
+  margin-bottom: 20px;
+}
+
+#form{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto auto auto;
+  grid-template-areas:
+  "form1 form1 form2 form2"
+  "form1 form1 form2 form2"
+  "... button button ...";
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+}
+
+#form1{
+  display: flex;
+  flex-direction: column;
+  grid-area: form1;
+}
+
+#form2{
+  display: flex;
+  grid-area: form2;
+  flex-direction: column;
+}
+
+.customer-details .cta-button{
+  grid-area: button;
+  margin: auto;
+}
+
+.customer-details #form label::after {
+  content: "\A";
+  white-space: pre;
+}
+
+input{
+  margin: 10px 0 25px 0;
+  border: none;
+  box-shadow:0 0 15px 4px rgba(0,0,0,0.06);
+  padding: 10px;
+}
+
+
+@media only screen and (max-width: 768px){
+  .customer-details{
+    margin: 70px;
+    background: rgb(251, 251, 251, 80%);
+  }
+  #form{
+    grid-template-areas:
+      "form1"
+      "form2"
+      "button";
+    grid-template-columns: auto;
+  }
+}
+
+@media only screen and (max-width: 600px){
+  .customer-details{
+    margin: 0px;
+    box-shadow: none;
+  }
+  #form{
+    grid-template-areas:
+      "form1"
+      "form2"
+      "button";
+    grid-template-columns: auto;
+  }
+}
+
+/* Summary Page */
+
+.summary-section{
+  display: grid;
+  grid-column-gap: 20px;
+  grid-row-gap: 10px;
+  grid-template-columns: auto;
+  grid-template-rows: 70px auto 40px auto 40px auto;
+  grid-template-areas:
+  "... header header header ... "
+  "form-h2 form-h2 form-h2 shipping-h2 shipping-h2"
+  "form form form shipping shipping"
+  "form form form shipping shipping"
+  "form form form summary-h2 summary-h2"
+  "form form form summary summary";
+}
+
+#payment-form{
+  box-sizing: border-box;
+  max-width: 450px;
+  display: grid;
+  grid-column-gap: 20px;
+  padding: 20px;
+  grid-template-columns: auto;
+  grid-template-rows: auto;
+  grid-template-areas:
+  "buttons buttons"
+  "card card"
+  "cvc expiry"
+  "button button";
+  border: 1px solid;
+  grid-area: form;
+}
+
+#form-h2{
+  grid-area: form-h2;
+}
+
+#card, #cvc, #expiry{
+  width: 100%;
+  box-sizing:border-box;
+}
+
+#card-label{
+  grid-area: card;
+  width: 100%;
+}
+
+#cvc-label{
+  grid-area: cvc;
+}
+
+#expiry-label{
+  grid-area: expiry;
+}
+
+#radio-buttons{
+  display: flex;
+  justify-content: space-between;
+  grid-area: buttons;
+}
+
+#shipping{
+  grid-area: shipping;
+  border: 1px solid;
+  padding: 20px;
+}
+
+#shipping-h2{
+  grid-area: shipping-h2;
+
+}
+
+#summary-h2{
+  grid-area: summary-h2;
+  align-self: flex-end;
+}
+
+.price3{
+  grid-area: price3;
+}
+
+#ship{
+  grid-area: shipping;
+}
+
+.summary-section .summary{
+  box-sizing: border-box;
+  height: 100%;
+  border: 1px solid;
+  padding: 20px;
+  align-self: flex-start;
+  grid-column-gap: 10px;
+  grid-template-rows: auto auto 5px auto;
+  grid-template-areas:
+    "sum sum price1"
+    "shipping ... price3"
+    "hr hr hr"
+    "total ... price2";
+}
+
+
+.summary-section .header{
+  text-align: left;
 }
 
 /* About Page Specific */
