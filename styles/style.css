@@ -53,11 +53,17 @@ a{
 }
 
 .background{
+  box-sizing: border-box;
   background-color: #FBFBFB;
   box-shadow: 1px 1px 10px ;
   padding: 20px;
   margin: 70px;
-  min-width: 900px;
+  width: 900px;
+}
+
+.header{
+  grid-area: header;
+  align-self: center;
 }
 
 @media only screen and (max-width: 1280px){
@@ -66,12 +72,13 @@ a{
   }
 }
 
-@media only screen and (max-width: 600px){
+@media only screen and (max-width: 992px){
+  .main-height{
+    min-height: 100vh;
+  }
 
   .background{
-    margin: 0;
-    width: 100%;
-    box-shadow: none;
+    width: 500px;
   }
 
   h1{
@@ -80,23 +87,101 @@ a{
 
   h2{
     font-size: 21px;
-
   }
 
   h3{
     font-size: 16px;
   }
+}
 
-  h4{
-    font-size: 12px;
+@media only screen and (max-width: 600px){
+  .main-height{
+    min-height: auto;
   }
 
-  p{
-    font-size: 12px;
+  .background{
+    margin: 0;
+    width: 100%;
+    box-shadow: none;
+    height: 100%;
   }
 }
 
+/* Link & Button Style */
 
+.link{
+  color: #0A3540;
+}
+
+.link:hover{
+  text-decoration: underline;
+  text-decoration-color: #8C4300;
+  text-decoration-thickness: 1px;
+}
+
+.active{
+  color: #8C4300;
+}
+
+.active:hover{
+  text-decoration: none;
+  border: none;
+}
+
+.cta-button{
+  grid-area: button;
+  min-height: 30px;
+  display: block;
+  width: 100%;
+  color: #8C4300;
+  font-size: 21px;
+  font-weight: bold;
+  font-style: italic;
+  background-color: #FBFBFB;
+  border: solid 2px #0A3540;
+  transition: background 0.3s;
+  padding: 5px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.cta-button:hover{
+  background-color: #0A3540;
+  border: solid 2px #0A3540;
+  color: #FBFBFB;
+}
+
+.arrow{
+  width: 60px;
+  transition: 0.3s;
+  animation-name: arrow;
+  animation-duration: 6s;
+}
+
+.arrow:hover{
+  width: 90px;
+}
+
+
+@keyframes arrow{
+  0% {width: 60px;}
+  25% {width: 90px;}
+  50% {width: 60px;}
+  75% {width: 90px;}
+  100% {width: 60px;}
+}
+
+@media only screen and (max-width: 992px){
+  /* Removing the hover effect on smaller devices */
+  .link:hover{
+    text-decoration: none;
+  }
+  .cta-button:hover{
+    color: #8C4300;
+    background-color: #FBFBFB;
+    border: solid 2px #0A3540;
+  }
+}
 
 /* Header and Nav */
 
@@ -260,82 +345,6 @@ then made some adjustments */
   }
 }
 
-/* Link & Button Style */
-
-.link{
-  color: #0A3540;
-}
-
-.link:hover{
-  text-decoration: underline;
-  text-decoration-color: #8C4300;
-  text-decoration-thickness: 1px;
-}
-
-.active{
-  color: #8C4300;
-}
-
-.active:hover{
-  text-decoration: none;
-  border: none;
-}
-
-.cta-button{
-  grid-area: button;
-  min-height: 30px;
-  display: block;
-  width: 100%;
-  color: #8C4300;
-  font-size: 21px;
-  font-weight: bold;
-  font-style: italic;
-  background-color: #FBFBFB;
-  border: solid 2px #0A3540;
-  transition: background 0.3s;
-  padding: 5px;
-  box-sizing: border-box;
-  text-align: center;
-}
-
-.cta-button:hover{
-  background-color: #0A3540;
-  border: solid 2px #0A3540;
-  color: #FBFBFB;
-}
-
-.arrow{
-  width: 60px;
-  transition: 0.3s;
-  animation-name: arrow;
-  animation-duration: 6s;
-}
-
-.arrow:hover{
-  width: 90px;
-}
-
-
-@keyframes arrow{
-  0% {width: 60px;}
-  25% {width: 90px;}
-  50% {width: 60px;}
-  75% {width: 90px;}
-  100% {width: 60px;}
-}
-
-@media only screen and (max-width: 992px){
-  /* Removing the hover effect on smaller devices */
-  .link:hover{
-    text-decoration: none;
-  }
-  .cta-button:hover{
-    color: #8C4300;
-    background-color: #FBFBFB;
-    border: solid 2px #0A3540;
-  }
-}
-
 /* Footer */
 
 footer{
@@ -485,6 +494,10 @@ footer img{
   background-image: linear-gradient(#FBFBFB, #FBFBFB, #0A3540);
 }
 
+#product-grid .header{
+  text-align: center;
+}
+
 @media only screen and (max-width: 1400px){
   .home-body{
     background-size: 1400px auto;
@@ -555,24 +568,12 @@ footer img{
 }
 
 @media only screen and (max-width: 768px){
-  #home-section h1{
-    font-size: 28px;
-  }
-
-  #home-section p{
-    font-size: 16px;
-  }
-
   #home-text{
     margin-top: 20px;
   }
 }
 
 @media only screen and (max-width: 600px){
-  .home-body{
-    background-size: 1200px;
-    background-position: center top;
-  }
 
   #home-section{
     padding-top: 20px;
@@ -581,6 +582,14 @@ footer img{
   #home-text{
     text-align: center;
     margin-top: 0px;
+  }
+
+  #home-section h1{
+    font-size: 28px;
+  }
+
+  #home-section p{
+    font-size: 16px;
   }
 
   #product-grid{
@@ -616,11 +625,10 @@ footer img{
 .product-spec-grid{
   box-sizing: border-box;
   display: grid;
-  margin: 70px 0;
   grid-row-gap: 20px;
   grid-column-gap: 20px;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 70px auto auto;
+  grid-template-rows: 100px auto auto;
   grid-template-areas:
     "header info"
     "img info"
@@ -628,10 +636,13 @@ footer img{
   width: 900px;
 }
 
+#thunder-img{
+  width: 250px;
+}
+
 .product-spec-grid img{
   max-width: 400px;
-  margin: auto auto;
-
+  margin: auto;
 }
 
 .product-spec-grid .price{
@@ -655,18 +666,16 @@ footer img{
   height: 300px;
 }
 
-.product h4{
+.product h3{
   margin: 5px 0 20px 0;
+}
+
+.product h4{
+  margin-bottom: 20px;
 }
 
 .product p{
   margin: 10px 0;
-}
-
-.header{
-  grid-area: header;
-  text-align: center;
-  color: #0A3540;
 }
 
 .storm{
@@ -745,6 +754,7 @@ footer img{
 
 .product-header{
   grid-area: header;
+  align-self: center;
 }
 
 .price{
@@ -786,12 +796,6 @@ footer img{
   left: 50%;
   width: 350px;
   height: 260px;
-}
-
-@media only screen and (max-width: 1400px){
-  .product{
-    padding: 10px;
-  }
 }
 
 @media only screen and (max-width: 850px) and (max-height: 450px){
@@ -861,23 +865,12 @@ footer img{
   grid-template-rows: 70px 1fr 1fr;
   padding-bottom: 20px;
   align-items: center;
-  max-width: 900px;
+  box-shadow: none;
 }
 
 @media only screen and (max-width: 992px){
   #collection-grid{
-    padding: 10px;
-    margin: 0px;
-    grid-column-gap: 10px;
-    grid-row-gap: 10px;
-    box-shadow: none;
-    grid-template-rows: 100px 1fr 1fr;
-  }
-}
-
-@media only screen and (max-width: 768px){
-  #collection-grid{
-    margin: 0;
+    width: 100%;
   }
 }
 
@@ -912,8 +905,7 @@ footer img{
     "item2 item2 item2 summary summary"
     ;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: auto auto auto ;
-  width: 900px;
+  grid-template-rows: 70px auto auto ;
 }
 
 #item1{
@@ -931,6 +923,7 @@ footer img{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 50px 1fr 1fr 1fr;
+  grid-row-gap: 20px;
   grid-template-areas:
     "header header header"
     "img color price"
@@ -940,8 +933,7 @@ footer img{
 }
 
 .cart-item img{
-  height: 100px;
-  margin: auto 0;
+  height: 120px;
 }
 
 .cart-item #number{
@@ -951,6 +943,7 @@ footer img{
 .delete{
   grid-area: delete;
   color: #0A3540;
+  align-self: center;
 }
 
 .sum{
@@ -993,37 +986,26 @@ footer img{
   margin-top: 10px;
 }
 
-@media only screen and (max-width: 768px){
+@media only screen and (max-width: 992px){
   .shopping-cart{
     grid-template-areas:
       "header"
       "item1"
       "item2"
-      "summary"
-      ;
+      "summary";
     grid-template-columns: auto;
-    grid-template-rows: auto 1fr 1fr 100px;
+    grid-template-rows: 70px 1fr 1fr 100px;
   }
 }
 
 /* Customer Details */
 
-.customer-details{
-  width: 700px;
-  display: block;
-  margin: auto;
-  flex-direction: column;
-}
-
-.customer-details .header{
-  margin-bottom: 20px;
-}
-
 #form{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: auto auto auto;
+  grid-template-rows: 70px auto auto auto;
   grid-template-areas:
+  "header header header header"
   "form1 form1 form2 form2"
   "form1 form1 form2 form2"
   "... button button ...";
@@ -1043,40 +1025,16 @@ footer img{
   flex-direction: column;
 }
 
-.customer-details .cta-button{
-  grid-area: button;
-  margin: auto;
-}
-
-.customer-details #form label::after {
-  content: "\A";
-  white-space: pre;
-}
-
 input{
   margin: 10px 0 25px 0;
-
   padding: 10px;
 }
 
 
-@media only screen and (max-width: 768px){
+@media only screen and (max-width: 992px){
   #form{
     grid-template-areas:
-      "form1"
-      "form2"
-      "button";
-    grid-template-columns: auto;
-  }
-}
-
-@media only screen and (max-width: 600px){
-  .customer-details{
-    margin: 0px;
-    box-shadow: none;
-  }
-  #form{
-    grid-template-areas:
+      "header"
       "form1"
       "form2"
       "button";
@@ -1089,7 +1047,7 @@ input{
 .summary-section{
   display: grid;
   grid-column-gap: 20px;
-  grid-row-gap: 10px;
+  grid-row-gap: 20px;
   grid-template-columns: auto;
   grid-template-rows: 70px auto 40px auto 40px auto;
   grid-template-areas:
@@ -1177,19 +1135,36 @@ input{
   padding: 20px;
   align-self: flex-start;
   grid-column-gap: 10px;
+  max-width: 450px;
   grid-template-rows: auto auto 5px auto;
   grid-template-areas:
-    "sum sum price1"
-    "shipping ... price3"
-    "hr hr hr"
-    "total ... price2";
+    "sum sum ... price1"
+    "shipping Shipping... price3"
+    "hr hr hr hr"
+    "total total ... price2";
 }
 
+@media only screen and (max-width: 992px){
+  .summary-section{
+    grid-template-columns: auto;
+    grid-template-rows: 60px 40px auto 40px auto;
+    grid-template-areas:
+    "header"
+    "shipping-h2"
+    "shipping"
+    "summary-h2"
+    "summary"
+    "form-h2"
+    "form"
+    ;
+  }
 
-.summary-section .header{
-  text-align: left;
 }
-
+@media only screen and (max-width: 600px){
+  #radio-buttons{
+    display: block;
+  }
+}
 /* About Page Specific */
 
 #about-body{
@@ -1209,7 +1184,6 @@ input{
   max-width: 600px;
   background: rgba(192, 230, 240, 0.8);
   border: 1px solid #0A3540;
-  border-radius: 5px;
   padding: 40px;
   margin-left: 70px;
 
@@ -1256,8 +1230,13 @@ input{
 }
 
 @media only screen and (max-width: 600px){
+  #about-main{
+    min-height: auto;s
+  }
+
   #about-text{
     padding: 40px 10px;
+    border: none;
   }
 }
 
