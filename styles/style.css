@@ -73,6 +73,27 @@ a{
     width: 100%;
     box-shadow: none;
   }
+
+  h1{
+    font-size: 28px;
+  }
+
+  h2{
+    font-size: 21px;
+
+  }
+
+  h3{
+    font-size: 16px;
+  }
+
+  h4{
+    font-size: 12px;
+  }
+
+  p{
+    font-size: 12px;
+  }
 }
 
 
