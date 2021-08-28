@@ -1213,8 +1213,10 @@ input{
 }
 
 @media only screen and (max-width: 992px){
+
   #about-body{
     background-position: left;
+
   }
   #about-text{
     margin: 0 auto;
@@ -1230,12 +1232,12 @@ input{
 
 @media only screen and (max-width: 600px){
   #about-main{
-    min-height: auto;s
+    height: 100%;
   }
 
   #about-text{
     padding: 40px 10px;
-    border: none;
+    box-shadow: none;
   }
 }
 
