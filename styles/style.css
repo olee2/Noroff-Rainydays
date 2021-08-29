@@ -545,7 +545,6 @@ footer img{
   #home-body{
     background-position: center -10%;
     background-attachment: scroll;
-
   }
 
   #home-section{
@@ -577,6 +576,11 @@ footer img{
 }
 
 @media only screen and (max-width: 600px){
+  #home-body{
+    background-position: center 45%;
+    background-attachment: scroll;
+  }
+
   #home-section{
     padding-top: 20px;
   }
