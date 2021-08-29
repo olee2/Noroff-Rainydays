@@ -725,7 +725,7 @@ footer img{
   border: solid 2px #0A3540;
 }
 
-.product-form #number{
+.number{
   width: 50px;
 }
 
@@ -916,6 +916,7 @@ footer img{
 }
 
 .cart-item{
+
   color: #0A3540;
   border: solid 1px #0A3540;
   padding: 20px;
@@ -928,7 +929,7 @@ footer img{
     "img color price"
     "img size ..."
     "img number delete";
-  height: 200px;
+  height: 230px;
 }
 
 .cart-item img{
@@ -1363,6 +1364,4 @@ input{
     width: 100%;
   }
 
-  #contact-info{
-  }
 }
