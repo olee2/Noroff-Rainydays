@@ -155,7 +155,7 @@ a{
   width: 60px;
   transition: 0.3s;
   animation-name: arrow;
-  animation-duration: 6s;
+  animation-duration: 5s;
 }
 
 .arrow:hover{
