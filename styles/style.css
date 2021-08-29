@@ -1,3 +1,5 @@
+/* Global */
+
 body{
   margin: 0;
   font-family: verdana;
@@ -53,6 +55,9 @@ a{
 }
 
 .background{
+  display: grid;
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
   box-sizing: border-box;
   background-color: #FBFBFB;
   box-shadow: 1px 1px 10px ;
@@ -162,7 +167,6 @@ a{
   width: 90px;
 }
 
-
 @keyframes arrow{
   0% {width: 60px;}
   25% {width: 90px;}
@@ -229,8 +233,7 @@ header{
   border-radius: 100%;
 }
 
-/* The code for the hamburger menu I found at https://code-boxx.com/simple-responsive-pure-css-hamburger-menu/,
-then made some adjustments */
+/* Hamburger Menu */
 
 #ham-nav{
   display: flex;
@@ -423,7 +426,7 @@ footer img{
 
 /*Home Page (+ Home Page Product Grid) */
 
-.home-body{
+#home-body{
   background-color:#FBFBFB;
   background-attachment: fixed;
   background-position: 50% 20%;
@@ -478,7 +481,7 @@ footer img{
   color: #FBFBFB;
 }
 
-#product-grid{
+#home-grid{
   display: grid;
   box-sizing: border-box;
   grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -494,12 +497,12 @@ footer img{
   background-image: linear-gradient(#FBFBFB, #FBFBFB, #0A3540);
 }
 
-#product-grid .header{
+#home-grid .header{
   text-align: center;
 }
 
 @media only screen and (max-width: 1400px){
-  .home-body{
+  #home-body{
     background-size: 1400px auto;
     background-position: center top;
   }
@@ -523,7 +526,7 @@ footer img{
     margin-top: 350px;
   }
 
-  #product-grid{
+  #home-grid{
     grid-template-areas:
       "header header"
       "thunder storm"
@@ -539,7 +542,7 @@ footer img{
 }
 
 @media only screen and (max-width: 850px) and (max-height: 450px){
-  .home-body{
+  #home-body{
     background-position: center -10%;
     background-attachment: scroll;
 
@@ -560,7 +563,7 @@ footer img{
 }
 
 @media only screen and (max-width: 992px){
-  #product-grid{
+  #home-grid{
     padding: 10px;
     grid-column-gap: 10px;
     grid-row-gap: 10px;
@@ -591,7 +594,7 @@ footer img{
     font-size: 16px;
   }
 
-  #product-grid{
+  #home-grid{
     padding: 0;
     grid-template-areas:
       "header"
@@ -607,25 +610,12 @@ footer img{
 
 /** Product Related **/
 
-.product-body{
-  background-color:#FBFBFB;
-  background-attachment: fixed;
-  background-position: 50% 20%;
-  background-image: url("../images/luca-massimilian-NCFCbcNVSVQ-unsplash(3).jpg");
-}
-
-.product-spec-back{
-  min-height: auto;
+.product-section{
   display: flex;
   justify-content: center;
-  align-items: center;
 }
 
-.product-spec-grid{
-  box-sizing: border-box;
-  display: grid;
-  grid-row-gap: 20px;
-  grid-column-gap: 20px;
+.product-grid{
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 100px auto auto;
   grid-template-areas:
@@ -639,12 +629,12 @@ footer img{
   width: 250px;
 }
 
-.product-spec-grid img{
+.product-grid img{
   max-width: 400px;
   margin: auto;
 }
 
-.product-spec-grid .price{
+.product-grid .price{
   margin-bottom: 10px;
 }
 
@@ -762,7 +752,7 @@ footer img{
   grid-area: price;
 }
 
-#add-to-cart1, #add-to-cart2, #add-to-cart3, #add-to-cart4, .added {
+#add-to-cart, .added {
   display: none;
 }
 
@@ -779,7 +769,11 @@ footer img{
   padding: 5px 10px;
 }
 
-#add-to-cart1:checked ~ .added, #add-to-cart2:checked ~ .added, #add-to-cart3:checked ~ .added, #add-to-cart4:checked ~ .added {
+.added .cta-button:hover{
+  border: 2px solid #FBFBFB;
+}
+
+#add-to-cart:checked ~ .added {
   display: flex;
   color: #FBFBFB;
   flex-direction: column;
@@ -793,15 +787,12 @@ footer img{
   padding: 20px;
   top: 50%;
   left: 50%;
-  width: 350px;
+  width: 400px;
   height: 260px;
 }
 
-@media only screen and (max-width: 850px) and (max-height: 450px){
-}
-
 @media only screen and (max-width: 992px){
-  .product-spec-grid{
+  .product-grid{
     padding: 20px;
     grid-row-gap: 20px;
     grid-template-columns: auto;
@@ -817,18 +808,23 @@ footer img{
 
 @media only screen and (max-width: 600px){
 
-  .product-spec-grid{
+  .product-grid{
     box-shadow: none;
+    border-bottom: 2px solid #0A3540;
     margin: 0;
   }
 
-  #add-to-cart1:checked ~ .added, #add-to-cart2:checked ~ .added, #add-to-cart3:checked ~ .added, #add-to-cart4:checked ~ .added {
+  .added .cta-button:hover{
+    border: 2px solid #0A3540;
+  }
+
+  #add-to-cart:checked ~ .added{
     transform: translate(-50%, 100%);
     height: 350px;
     width: 100%
   }
 
-  .product-spec-grid .product-img{
+  .product-grid .product-img{
     width: 330px;
   }
 
@@ -850,12 +846,7 @@ footer img{
 
 /* Collection Page Specific */
 
-
 #collection-grid{
-  box-sizing: border-box;
-  display: grid;
-  grid-column-gap: 20px;
-  grid-row-gap: 20px;
   grid-template-areas:
     "header header"
     "thunder storm"
@@ -892,12 +883,7 @@ footer img{
 
 /* Shopping Cart */
 
-
 .shopping-cart{
-  box-sizing: border-box;
-  display: grid;
-  grid-column-gap: 20px;
-  grid-row-gap: 20px;
   grid-template-areas:
     "header header header header header"
     "item1 item1 item1 ... ..."
@@ -916,7 +902,6 @@ footer img{
 }
 
 .cart-item{
-
   color: #0A3540;
   border: solid 1px #0A3540;
   padding: 20px;
@@ -1045,9 +1030,6 @@ input{
 /* Summary Page */
 
 .summary-section{
-  display: grid;
-  grid-column-gap: 20px;
-  grid-row-gap: 20px;
   grid-template-columns: auto;
   grid-template-rows: 70px auto 40px auto 40px auto;
   grid-template-areas:
