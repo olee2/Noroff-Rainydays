@@ -1358,7 +1358,10 @@ input{
   .contact-section{
     box-sizing: border-box;
     box-shadow: none;
-    padding: 0 40px 0 40px;
+    padding: 20px 40px 20px 40px;
     width: 100%;
+  }
+
+  #contact-info{
   }
 }
