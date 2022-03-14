@@ -1,3 +1,4 @@
+
 /* Global */
 
 body{
@@ -120,6 +121,7 @@ a{
 
 .link{
   color: #0A3540;
+  
 }
 
 .link:hover{
@@ -246,12 +248,12 @@ header{
   margin-right: 70px;
 }
 
-#ham-items{
+.ham-items{
   display: flex;
   align-items: center;
 }
 
-#ham-items a{
+.ham-items a{
   flex-grow: 1;
   flex-basis: 0;
   margin: 5px 0px 10px 20px;
@@ -264,7 +266,7 @@ header{
   margin-right: 20px;
 }
 
-#ham-nav label, #hamburger {
+.hamburger, #hamburger {
   display: none;
 }
 
@@ -288,12 +290,24 @@ header{
     margin-right: 0;
   }
 
-  #ham-items{
-    display:none;
-    border-bottom: solid 3px #0A3540;
+  .ham-items{
+    display: block;
+    background: rgba(251, 251, 251);
+    margin-top: 58px;
+    width: 100%;
+    position: absolute;
+    display:block;
+    height: 0;
+    overflow: hidden;
+    transition: all 0.3s linear;
   }
 
-  #ham-items a{
+  .hidden{
+    height: 17rem;
+    
+  }
+
+  .ham-items a{
     box-sizing: border-box;
     display: block;
     width: 100%;
@@ -301,32 +315,21 @@ header{
     margin: 0;
   }
 
-  #ham-nav label{
+  .hamburger{
     display: block;
     color: #0A3540;
     font-size: 25px;
     padding: 3px 12px 10px 10px;
     position: absolute;
     transition: transform 0.2s;
-
+    cursor: pointer;
+    transition: all 0.3s linear;
   }
 
-  #ham-nav input:checked ~ #ham-items {
-    display: block;
-    background: rgba(251, 251, 251);
-    margin-top: 58px;
-    width: 100%;
-    position: absolute;
-  }
-
-  #ham-nav label:hover {
-    transform: rotate(45deg);
-  }
-
-  #ham-nav input:checked ~ label {
+  /*.hamburger:hover {
     transform: rotate(90deg);
+  }*/
 
-  }
 }
 
 @media only screen and (max-width: 992px){
