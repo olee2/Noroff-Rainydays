@@ -566,7 +566,7 @@ footer img{
 
   #home-body{
     background-position:center;
-    background-size: contain;
+    background-size: cover;
   }
 
   .home-grid{
