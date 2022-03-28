@@ -1,21 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Rainydays | Details</title>
-    <meta name="description" content="Rainydays Details">
+    <title>Rainydays | Fog</title>
+    <meta name="description" content="Rainydays Fog">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" href="styles/style.css">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
   </head>
-  <body class="flex column details-body">
+  <body class="product-body flex column">
     <header class="flex justify-between">
       <a href="index.html"><img src="images/RainyDays_Logo.png" class="logo" alt="Rainydays Mountain Logo"></a>
       <nav class="ham-nav">
         <span class="hamburger">&#9776</span>
         <div class="ham-items">
           <a href="index.html" class="link">Home</a>
-          <a href="collection.html" class="link">Collection</a>
+          <a href="collection.html" class="link active">Collection</a>
           <a href="about.html" class="link">About</a>
           <a href="contact.html" class="link">Contact</a>
           <a class="flex">
@@ -29,7 +29,7 @@
       </nav>
     </header>
     <main class="flex align-center justify-center">
-      <section class="shopping-cart flex column align-center container">
+      <section class="shopping-cart flex column align-center">
         <h2>Shopping Cart</h2>
         <div class="flex gap20 column">
           <div class="flex column cart-products">
@@ -37,38 +37,7 @@
           <div class="summary flex column"></div>
         </div>
       </section>
-      <section class="background">
-        <form id="form">
-          <h1 class="header">Customer Details</h1>
-          <div id="form1">
-            <label for="email" id="email-label">Email</label>
-            <input type="email" id="email" name="email" placeholder="Input Email" required>
-            <label for="first" id="first-label">First Name</label>
-            <input type="text" id="first" name="first" placeholder="Input First Name" minlength="1" maxlength="20" required>
-            <label for="last" id="last-label">Last Name</label>
-            <input type="text" id="last" name="last" placeholder="Input Last Name" minlength="2" maxlength="20" required>
-          </div>
-          <div id="form2">
-            <div class="flex column">
-              <label for="phone" id="phone-label">Phone</label>
-              <input type="tel" id="phone" name="phone" oninvalid="setCustomValidity('Enter a 8 digit phone number')" placeholder="Input Phone Number" pattern="[0-9]{3}\s*[0-9]{2}\s*[0-9]{3}">
-            </div>
-            <label for="adress" id="adress-label">Adress</label>
-            <input type="text" id="adress" name="adress" placeholder="Input Adress" required minlength="2" maxlength="20">
-            <div class="flex post-city">
-              <div class="flex column postal">
-                <label for="postal" id="postal-label">Zip</label>
-                <input type="text" id="postal" oninvalid="setCustomValidity('Enter a 4-digit Zip Code')" name="postal" minlength="4" maxlength="4" pattern="[\d]{4}"placeholder="Input Zip" required>
-              </div>
-              <div class="flex column city">
-                <label for="city" id="city-label">City</label>
-                <input type="text" id="city" name="city" minlength="2" maxlength="20" placeholder="Input City" required>
-              </div>
-            </div>
-          </div>
-          <button class="cta-button">Submit</button>
-        </form>
-      </section>
+      <section class="flex container"></section>
     </main>
     <footer>
       <div class="copyright footer-flex">
@@ -88,7 +57,7 @@
       </div>
     </footer>
     <script src="./js/script.js"></script>
-    <script src="./js/details.js"></script>
+    <script type="module" src="./js/product.js"></script>
     <script type="module"src="./js/cart.js"></script>
   </body>
 </html>
