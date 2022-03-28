@@ -377,13 +377,11 @@ header{
 
 @media only screen and (max-width: 600px){
   .logo{
-    width: 80%;
+    height: 50px;
   }
 
-  #ham-nav label{
+  .hamburger{
     font-size: 21px;
-    padding-top: 7px;
-    margin-right: 10px;
   }
 }
 
