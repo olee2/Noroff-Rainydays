@@ -565,7 +565,8 @@ footer img{
 @media only screen and (max-width: 600px){
 
   #home-body{
-    background-position: center;
+    background-position:center;
+    background-size: contain;
   }
 
   .home-grid{
