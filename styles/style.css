@@ -376,6 +376,10 @@ header{
 
 
 @media only screen and (max-width: 600px){
+  .ham-items{
+    margin-top: 38px;
+  }
+
   .logo{
     height: 50px;
   }
