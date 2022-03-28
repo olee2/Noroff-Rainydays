@@ -563,6 +563,11 @@ footer img{
 
 
 @media only screen and (max-width: 600px){
+
+  #home-body{
+    background-position: center;
+  }
+
   .home-grid{
     grid-template-columns: 300px;
   }
