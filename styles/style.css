@@ -296,6 +296,28 @@ header{
   }
 } 
 
+.num-items{
+  font-size: 16px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  margin: 27px 72px 0 0;
+  color: #8C4300;
+}
+
+.num-animation{
+  animation-name: num;
+  animation-duration: 1.5s;
+}
+
+@keyframes num {
+  0%   {opacity: 0;}
+  100% {opacity: 1;}
+}
+
+.small-cart{
+  display:none;
+}
 
 
 /* Hamburger Menu */
@@ -326,6 +348,21 @@ header{
 }
 
 @media screen and (max-width: 1200px){
+  .small-cart{
+    display: block;
+    margin-right: 50px;
+    height: 21px;
+    margin-bottom: 7px;
+  }
+
+  .num-items{
+    font-size: 12px;
+  }
+
+  .ham-items .large-cart{
+    display:none;
+  }
+
   .ham-nav{
     padding-right: 0;
   }
@@ -343,7 +380,7 @@ header{
   }
 
   .hidden{
-    height: 17rem;
+    height: 13rem;
     
   }
 
@@ -385,7 +422,7 @@ header{
   }
 
   .hamburger{
-    font-size: 21px;
+    font-size: 28px;
   }
 }
 
@@ -852,28 +889,6 @@ footer img{
   width: 300px;
 }
 
-.num-items{
-  font-size: 16px;
-  position: absolute;
-  right: 0;
-  top: 0;
-  margin: 27px 72px 0 0;
-  color: #8C4300;
-}
-
-.num-animation{
-  animation-name: num;
-  animation-duration: 1.5s;
-}
-
-@keyframes num {
-  0%   {opacity: 0;}
-  100% {opacity: 1;}
-}
-
-
-
-
 .shopping-cart h2{
   font-size: 21px;
   letter-spacing: 1px;
@@ -931,6 +946,7 @@ footer img{
 @media only screen and (max-width: 600px){
   .show{
     width: 100%;
+    height: 100vh;
   }
 }
 
