@@ -4,11 +4,11 @@ import { counter } from "./item-counter.js";
 
 const productContainer = document.querySelector(".cart-products");
 const summaryContainer = document.querySelector(".summary");
-const numItems = document.querySelector(".num-items")
+const numItems = document.querySelectorAll(".num-items")
 
 productContainer.innerHTML = cartProductHTML();
 summaryContainer.innerHTML = cartSummaryHTML();
-numItems.innerHTML = counter();
+numItems.forEach(i => i.innerHTML = counter());
 
 export const addEvent = () => {
     const deleteX = document.querySelectorAll(".delete");

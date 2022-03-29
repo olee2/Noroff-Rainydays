@@ -19,6 +19,7 @@ h1{
   margin: 0;
   color: #0A3540;
   text-align: center;
+  align-self: center;
 }
 
 h2{
@@ -267,7 +268,6 @@ header{
 
 #shopping_cart-24px:hover{
   fill: #8C4300;
-  height: 28px;
 }
 
 .cart-animation{
@@ -350,7 +350,7 @@ header{
 @media screen and (max-width: 1200px){
   .small-cart{
     display: block;
-    margin-right: 50px;
+    margin-right: 100px;
     height: 21px;
     margin-bottom: 7px;
   }
@@ -402,6 +402,11 @@ header{
   }
 }
 @media only screen and (max-width: 992px){
+
+  .small-cart{
+    margin-right: 50px;
+  }
+  
   .logo{
     margin-left: 20px;
   }
@@ -819,7 +824,6 @@ footer img{
 
   .product-body img{
     max-height: 300px;
-    margin-top: 10px;
   }
 }
 
@@ -849,6 +853,9 @@ footer img{
 @media only screen and (max-width: 992px){
   #collection-grid{
     width: 100%;
+  }
+  .collection-section h1{
+    margin-bottom: 30px;
   }
 }
 
