@@ -820,11 +820,22 @@ footer img{
   .product-container{
     height: 450px;
     gap: 0px;
+    padding: 10px;
   }
 
-  .product-body img{
-    max-height: 300px;
+  .product-body .gap20{
+    gap: 10px;
   }
+
+  .product-img{
+    padding-top: 10px;
+  }
+  
+
+  .product-body h1{
+    font-size: 21px;
+  }
+
 }
 
 /* Collection Page Specific */

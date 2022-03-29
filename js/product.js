@@ -9,7 +9,7 @@ const container = document.querySelector(".container");
 const jacket = jackets.find(j => j.name === name);
 const cart = document.querySelector(".cart-products");
 const cartSummary = document.querySelector(".summary");
-const numItems = document.querySelector(".num-items");
+const numItems = document.querySelectorAll(".num-items");
 
 productHTML(container, jacket);
 
@@ -36,7 +36,7 @@ form.onsubmit = (event) => {
     cartSummary.innerHTML = cartSummaryHTML();
     animation()
     count < 1 ? showCart() : undefined;
-    numItems.innerHTML = counter();
+    numItems.forEach(i => i.innerHTML = counter());
     addEvent();
     
 }

@@ -15,7 +15,7 @@ export const addEvent = () => {
     deleteX.forEach(d => {
         d.addEventListener("click", function(){
             deleteItem(d.id)
-            numItems.innerHTML = counter();
+            numItems.forEach(i => i.innerHTML = counter());
             productContainer.innerHTML = cartProductHTML();
             summaryContainer.innerHTML = cartSummaryHTML();
             addEvent();
