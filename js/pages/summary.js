@@ -15,10 +15,6 @@ const modal = document.querySelector(".confirmation");
 summary.innerHTML = lastSummaryHTML();
 shipping.innerHTML = createShippingHTML(first, last, adress, zip, city);
 
-const confirmation = () => {
-
-}
-
 form.onsubmit = (event) => {
     event.preventDefault();
     modal.showModal();

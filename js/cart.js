@@ -31,13 +31,5 @@ export const showCart = () => {
     }, 3000)
 }
 
-export const animation = () => {
-    const cart = document.querySelector("#shopping_cart-24px");
-    const num = document.querySelector(".num-items");
-    num.classList.add("num-animation")
-    cart.classList.add("cart-animation");
-
-}
-
 
 addEvent();

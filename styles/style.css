@@ -24,6 +24,7 @@ h1{
 
 h2{
   margin: 0;
+  color:rgb(255, 90, 0)
   font-size: 28px;
   font-weight: normal;
 }
@@ -134,6 +135,28 @@ input:focus{
 
 .form-h2{
   grid-area: form-h2;
+}
+
+.spinner{
+    animation: 1.5s linear infinite spinner;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: solid 5px #0A3540;
+    border-bottom-color: #fbfbfb;
+    grid-column: 2;
+    grid-row: 2;
+    justify-self: center;
+}
+
+
+@keyframes spinner {
+  0% {
+      transform: rotate(0deg);
+  }
+  100% {
+      transform: rotate(360deg);
+  }
 }
 
 
@@ -843,6 +866,7 @@ footer img{
 .collection-section{
   background-color: #FBFBFB;
   padding: 70px;
+  min-height: 100vh;
 }
 
 .collection-grid{
@@ -852,7 +876,21 @@ footer img{
 }
 
 .collection-section h1{
-  margin-bottom: 70px;
+  margin-bottom: 20px;
+}
+
+.categories{
+  width: 250px;
+  margin: 0 auto 50px auto;
+  color: #0A3540;
+}
+
+.category{
+  cursor: pointer;
+}
+
+.choosen{
+  border-bottom: 1px solid #0A3540;
 }
 
 @media only screen and (max-width: 1200px){
@@ -896,15 +934,19 @@ footer img{
   align-self: flex-start;
   right: 0;
   overflow: hidden;
-  width: 0;
+  width: 300px;
+  transform: translateX(100%);
   padding: 20px 0;
   position: absolute;
   transition: all 0.3s linear;
   background-color: #FBFBFB;
+  border-bottom: 1px solid #0A3540;
+  border-left: 1px solid #0A3540;
 }
 
 .show{
-  width: 300px;
+  transform: translateX(0%);
+  
 }
 
 .shopping-cart h2{

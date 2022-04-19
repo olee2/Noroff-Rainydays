@@ -1,24 +1,23 @@
 export const collectionHTML = (arr, num) => {
     if(num) arr = arr.slice(0, num);
-    return arr.map(j => `<a href="product.html?name=${j.name}" class="product">
+    return arr.map(j => `<a href="product.html?id=${j.id}" class="product">
                             <img src="${j.image}" alt="${j.name}">
                             <div class="flex column product-details">
                                 <h2>${j.name} Jacket</h2>
-                                <p>$${j.price}</p>
+                                <p>NOK ${j.price},-</p>
                             </div>
                         </a>`).join("")
 }
 
 export const productHTML = (container, jacket) => {
-    const keywords = jacket.keywords.map(k => `<li>${k}</li>`).join("")
     container.innerHTML = ` 
     <div class="product-img">
-                            <img src="${jacket.image}" alt="${jacket.name} Jacket">
+                            <img src="${jacket.images[0].src}" alt="${jacket.name} Jacket">
                         </div>
                         <div class="flex column justify-between gap20 product-container">
                             <div class="flex justify-between align-center">
                                 <h1 class="product-name">${jacket.name} Jacket</h1>
-                                <p class="product-price">$ ${jacket.price}</p>
+                                <p class="product-price">NOK ${jacket.price},-</p>
                             </div>
                             <form class="product-form flex column justify-between flex1">
                             <div class="product-color flex align-center gap20">
@@ -48,8 +47,7 @@ export const productHTML = (container, jacket) => {
                                 </div>
                             </form>
                             <div class="product-info">
-                                <p class="product-description">${jacket.description}</p>
-                                <ul class="product-bullets">${keywords}</ul>
+                                ${jacket.description}
                             </div>
                         </div>`
 }

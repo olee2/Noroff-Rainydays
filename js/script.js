@@ -14,4 +14,3 @@ hamburger.onclick = () => {
     items.classList.toggle("hidden")
     cart.classList.remove("show");
 }
-
