@@ -28,8 +28,7 @@ export const showCart = () => {
     cart.classList.add("show");
     setTimeout(() => {
         cart.classList.remove("show");
-    }, 3000)
+    }, 2000)
 }
-
 
 addEvent();

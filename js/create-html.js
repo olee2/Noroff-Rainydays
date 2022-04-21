@@ -99,7 +99,7 @@ export const cartSummaryHTML = () => {
     } catch (error) {
         return `<div class="flex column align-center">
                     <p>The cart is empty</p>
-                    <a class="cta-button" href="collection.html">Get Started!</a>
+                    <a class="cta-button" href="collection.html">Find a Jacket!</a>
                 </div>
         `
     }
