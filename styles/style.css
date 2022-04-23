@@ -137,6 +137,12 @@ input:focus{
   grid-area: form-h2;
 }
 
+.error{
+  grid-column: 1/-1;
+  justify-self: center;
+  text-align: center;
+}
+
 .spinner{
     animation: 1.5s linear infinite spinner;
     width: 100px;
@@ -144,8 +150,8 @@ input:focus{
     border-radius: 50%;
     border: solid 5px #0A3540;
     border-bottom-color: #fbfbfb;
-    grid-column: 2;
-    grid-row: 2;
+    grid-column: 1/-1;
+    grid-row: 1/-1;
     justify-self: center;
 }
 
