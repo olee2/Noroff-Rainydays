@@ -10,6 +10,7 @@ We were tasked with building a web site for a science museum that should be info
 
 Requirements:
 
+- In addition to home, product page, contact and about, the site should have a process from product added to cart until check out
 - Responsive
 - Quick to download
 - Should take WCAG principles into consideration
