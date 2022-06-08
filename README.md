@@ -15,6 +15,8 @@ Requirements:
 - Quick to download
 - Should take WCAG principles into consideration
 
+Due to this being a site that has been developed as I have learned new technologies and principles, there was never a coherent plan. But the site has served its purpose in terms of learning. As I have been coming back to it I always see things that should have been done otherwise, but that I didn't have the skills to see at the time of development.
+
 [Live Site](https://noroff-rainydays.netlify.app)
 
 ## Built With
